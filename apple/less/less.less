@@ -1,0 +1,258 @@
+//@color:red;
+//.one{
+//  width: 200px;
+//  height: 200px;
+//  //background: @color;
+//  border:1px solid @color;
+//  .radius(5px,10px,20px,30px);
+//  .shadow(outset);
+//}
+//.radius(@num1,@num2,@num3,@num4){
+//  -webkit-border-radius:@arguments;
+//  -moz-border-radius:@arguments;
+//  -ms-border-radius:@arguments;
+//  -o-border-radius:@arguments;
+//  border-radius:@arguments;
+//}
+//.shadow(@type,@x:10px,@y:10px,@b:20px,@c:#000)
+//  when(@type=inset){
+//  -webkit-box-shadow:@x @y @b @c @type;
+//  -moz-box-shadow:@x @y @b @c @type;
+//  -ms-box-shadow:@x @y @b @c @type;
+//  -o-box-shadow:@x @y @b @c @type;
+//  box-shadow:@x @y @b @c @type;
+//  }
+//.shadow(@type,@x:10px,@y:10px,@b:20px,@c:#000)
+//  when(@type=outset){
+//  -webkit-box-shadow:@x @y @b @c;
+//  -moz-box-shadow:@x @y @b @c;
+//  -ms-box-shadow:@x @y @b @c;
+//  -o-box-shadow:@x @y @b @c;
+//  box-shadow:@x @y @b @c;
+//}
+//.two{
+//  width: 200px;
+//  height: 200px;
+//  border:1px solid @color;
+//  border-image-source: url(../lin.jpg);
+//  border-image-width: 20px;
+//  border-image-slice: 20% 22% 20% 22%;
+//  border-image-repeat: round;
+//  border-image-outset: 20px;
+//}
+//.for();
+//.for(@i:1) when(@i<=12){
+//  div@{i}{
+//    width:@i/12*100%;
+//  }
+//  .for(@i:@i+1)
+//}
+
+*{
+  box-sizing: border-box;
+}
+@row:12;
+@num2:1200px;
+@num1:900px;
+//响应小屏
+.container{
+  &-fluid{
+    width: 100%;
+    margin: 0 auto;
+    .clear();
+  }
+  &{
+    width:600px;
+    margin: 0 auto;
+    .clear();
+  }
+  &-fluid>.row{
+    width: 100%;
+    .clear();
+  }
+  &>.row{
+    width:100%;
+    .clear();
+  }
+}
+
+//小
+.for(s);
+.cols-l-hide{
+  display: block;
+}
+.cols-m-hide{
+  display: block;
+}
+.cols-s-hide{
+  display: none;
+}
+//中
+@media screen and (min-width: @num1){
+  .for(m);
+  .container{
+    width: @num1;
+  }
+  .cols-l-hide{
+    display: block;
+  }
+  .cols-s-hide{
+    display: block;
+  }
+  .cols-m-hide{
+    display: none;
+  }
+}
+
+//大
+@media screen and (min-width: @num2){
+  .for(l);
+  .container{
+    width: @num2;
+  }
+  .cols-m-hide{
+    display: block;
+  }
+  .cols-s-hide{
+    display: block;
+  }
+  .cols-l-hide{
+    display: none;
+  }
+}
+
+.for(@type,@i:1) when(@i<=@row){
+  .container>.row>.cols-@{type}-@{i}{
+    width: @i/@row*100%;
+    float: left;position: relative;
+  }
+  .container>.row>.cols-@{type}-offset-@{i}{
+    margin-left:@i/@row*100%;
+  }
+  .container>.row>.cols-@{type}-push-@{i}{
+    left:@i/@row*100%;
+  }
+  .container>.row>.cols-@{type}-pull-@{i}{
+    left:-@i/@row*100%;
+  }
+  .container-fluid>.row>.cols-@{type}-@{i}{
+    width: @i/@row*100%;
+    float: left;position: relative;
+  }
+  .for(@type,@i+1);
+}
+
+.clear(){
+  &{
+    &:before,&:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+@rows:10;
+//响应小屏
+.containers{
+  &-fluid{
+    width: 100%;
+    margin: 0 auto;
+    .clear();
+  }
+  &{
+    width:600px;
+    margin: 0 auto;
+    .clear();
+  }
+  &-fluid>.row{
+    width: 100%;
+    .clear();
+  }
+  &>.row{
+    width:100%;
+    .clear();
+  }
+}
+
+//小
+.fors(s);
+.cols-s-height{
+  height: 35px;
+  border-bottom:1px solid #d6d6d6;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.cols-l-hide{
+  display: block;
+}
+.cols-m-hide{
+  display: block;
+}
+.cols-s-hide{
+  display: none;
+}
+//中
+@media screen and (min-width: @num1){
+  .fors(m);
+  .containers{
+    width: @num1;
+  }
+  .cols-l-hide{
+    display: block;
+  }
+  .cols-s-hide{
+    display: block;
+  }
+  .cols-m-hide{
+    display: none;
+  }
+  .cols-s-height{
+    height: auto;
+    border:none;
+    padding: 2px 0;
+  }
+}
+
+//大
+@media screen and (min-width: @num2){
+  .fors(l);
+  .containers{
+    width: @num2;
+  }
+  .cols-m-hide{
+    display: block;
+  }
+  .cols-s-hide{
+    display: block;
+  }
+  .cols-l-hide{
+    display: none;
+  }
+  .cols-s-height{
+    height: auto;
+    padding: 2px 0;
+    border:none;
+  }
+}
+
+.fors(@type,@i:1) when(@i<=@rows){
+  .containers>.row>.cols-@{type}-@{i}{
+    width: @i/@rows*100%;
+    float: left;position: relative;
+  }
+  .containers>.row>.cols-@{type}-offset-@{i}{
+    margin-left:@i/@rows*100%;
+  }
+  .containers>.row>.cols-@{type}-push-@{i}{
+    left:@i/@rows*100%;
+  }
+  .containers>.row>.cols-@{type}-pull-@{i}{
+    left:-@i/@rows*100%;
+  }
+  .containers-fluid>.row>.cols-@{type}-@{i}{
+    width: @i/@rows*100%;
+    float: left;position: relative;
+  }
+  .fors(@type,@i+1);
+}
