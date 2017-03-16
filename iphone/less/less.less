@@ -1,0 +1,245 @@
+@cols:20;
+@num1:600px;
+@num2:1000px;
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  margin:0;
+  padding:0;
+  background: #F2F2F2;
+}
+ul,li,a{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  list-style: none;
+}
+.container{//大盒子
+  &-fuild{
+    width:100%;
+    .clear();
+    margin:auto;
+  }
+  &-fuild{
+    &>.row{//行
+      width:100%;
+      .clear();
+    }
+  }
+  &{
+    width:@num1;
+    .clear();
+    margin:auto;
+    &>.row {  //行
+      width: 100%;
+      .clear();
+    }
+  }
+}
+//小屏
+.for(s);
+.col-m-hide{
+  display: block;
+}
+.col-l-hide{
+  display: block;
+}
+.col-s-hide{
+  display: none;
+}
+//中屏
+@media screen and (min-width: @num1){
+  .container{
+    width:@num1;
+  }
+  .for(m);
+  .col-s-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: none;
+  }
+}
+// 大屏
+@media screen and (min-width: @num2) {
+  .container{
+    width:@num2;
+  }
+  .for(l);
+  .col-s-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: none;
+  }
+}
+//清除浮动影响
+.clear(){
+  &{
+    &:before,&:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
+//循环
+.for(@type,@i:1) when (@i<=@cols){
+  .container>.row .col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float: left;
+    position: relative;
+  }
+  .container-fuild>.row .col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float: left;
+    position: relative;
+  }
+  //偏移量
+  .container>.row .col-@{type}-offect-@{i}{
+    margin-left:@i/@cols*100%;
+  }
+  //换位置
+  .container>.row .col-@{type}-right-@{i}{
+    left:@i/@cols*100%;
+  }
+  .container>.row .col-@{type}-left-@{i}{
+    left:-@i/@cols*100%;
+  }
+  .for(@type,@i:@i+1);
+}
+//头部
+.header{
+  width:100%;
+  height:44px;
+  background: #303030;
+}
+.header .container .row div{
+  height:44px;
+  line-height: 44px;
+  text-align: center;
+}
+.header .container .row div a {
+  font-size: 16px;
+  color:#fff;
+}
+.header .container .row div a:hover {
+  color:#999;
+}
+//banner
+.banner{
+  width:100%;
+  height: 550px;
+  text-align:center;
+  position: relative;
+  overflow: hidden;
+}
+.banner .banner-1{
+  width:100%;
+  height:550px;
+  background-image:url("../img/iphone_alt_large.jpg");
+  background-position: center center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  background-color: #0A0A0A;
+  position: absolute;
+  left:0;
+  top:0;
+  float:left;
+}
+.banner .banner-3{
+  width:100%;
+  height:550px;
+  background-image:url("../img/macbookpro_large.jpg");
+  background-position: center center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  position: absolute;
+  left:100%;
+  top:0;
+  float:left;
+}
+.banner .banner-2{
+  width:100%;
+  height:550px;
+  background-image:url("../img/watch_alt_large.jpg");
+  background-position: center center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  background-color: #F3F3F3;
+  position: absolute;
+  left:100%;
+  top:0;
+  float:left;
+}
+.content{
+  border:2px solid #fff;
+  width:100%;
+  overflow: hidden;
+  margin: auto;
+}
+.border{
+  border:2px solid #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.border>a>img{
+  width:100%;
+}
+.footer {
+  width: 980px;
+  margin: auto;
+}
+.footerzi div a{
+  font-size: 12px;
+  color:#333;
+}
+.footerzi div a:hover{
+  text-decoration: underline;
+}
+.footerzi .h6{
+  margin-top:20px;
+}
+.floot{
+  width: 980px;
+  margin: auto;
+  padding-top: 20px;
+}
+.line{
+  width:100%;
+  border: 1px solid #ccc;
+  margin-top:10px;
+}
+.margintop{
+  margin-top:10px;
+  padding-bottom: 30px;
+}
+.footzi{
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  color:#333;
+  padding-left:15px;
+  padding-right:15px;
+}
+.footzi a{
+  color:blue;
+}
+.footzi a:hover{
+  text-decoration: underline;
+}
+.leftb{
+  border-right:1px solid #ccc;
+}
