@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body{
+	min-width: 320px;
+}
+.head{
+	color: #a8a8aa;
+	background: #444;
+    width: 100%;
+    height: 40px
+}
+.head_inner{
+	line-height: 40px;
+	text-align: right;
+    max-width: 976px;
+    margin: 0 auto;
+}
+.nav{
+	position: relative;
+	min-width: 1024px;
+    height: 48px;
+    max-height: 44px;
+    background: rgba(0,0,0,0.8);
+    font-size: 17px;
+}
+.article{
+	width: 100%;
+	max-height: 100%;
+    height: 540px;
+	position:relative;
+	bottom: 20px;
+	overflow: hidden;
+}
+.lbbox{
+	overflow: hidden;
+}
+.article .lb{
+	width: 100%;
+	position: absolute;
+	background-size: contain;
+    background-position: center center;
+	left: 100%;
+	height: 100%;
+}
+.article .first{
+	left: 0;
+	display: block;
+}
+.article .next{
+	left: 100%;
+	display: block;
+	/*z-index: 1;;*/
+}
+.article .lb:nth-child(1){
+	background-image: url(../img/1.jpg);
+}
+.article .lb:nth-child(2){
+	background-image: url(../img/2.jpg);
+}
+.article .lb:nth-child(3){
+	background-image: url(../img/3.jpg);
+}
+.lb_btn{
+	text-align: center;
+	z-index: 1000;
+    border-radius: 64px;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(180,180,180,1);
+    color: #848484;
+    font-size: 22px;
+    line-height: 64px;
+    /*opacity: 0;*/
+}
+.article ul div{
+	position: absolute;
+	width: 20%;
+	height: 100%;
+}
+.article ul div:nth-child(1){
+	left: 0;
+}
+.article ul div:nth-child(2){
+	right: 0;
+}
+.antbox{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right:0;
+	margin: 0 auto;
+	width: 180px;
+	height: 2px;
+}
+.ant{
+	float: left;
+	margin: 0 5px;
+	width: 50px;
+	height: 100%;
+	background: #fff;
+}
+.four{
+	width:100%;
+	margin-top: -20px;
+}
+.four li{
+	float: left;
+	height: 200px;
+	width: 50%;
+}
+.four li:nth-child(1){
+	background: red;
+}
+.four li:nth-child(2){
+	background: blue;
+}
+.four li:nth-child(3){
+	background: green;
+}
+.four li:nth-child(4){
+	background: gold;
+}
+@media only screen and (min-width:767px) {
+	.four li{
+		width: 25%;
+	}
+}
