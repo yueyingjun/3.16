@@ -1,2 +1,3 @@
 # 3.16
-3.16 作业
+[]()
+[![Gitter](https://img.shields.io/badge/apple-DEMO-brightgreen.svg)](https://limbobark.github.io/3.16/index.html)
