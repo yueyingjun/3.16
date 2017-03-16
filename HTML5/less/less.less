@@ -1,0 +1,76 @@
+@cola:12;
+@num1:900px;
+@num2:1200px;
+
+.container{
+  &-fluid{
+    width: 100%;
+    .clear();
+  }
+  &-fluid .row{
+    width: 100%;
+    .clear();
+
+  }
+  &{
+    margin: 0 auto;
+    width: 600px;
+    .clear();
+  }
+  &>.row{
+    width: 100%;
+    .clear();
+  }
+}
+.clear{
+  &:before,&:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.aaa(@type,@i:0) when (@i<=@cola) {
+  .container > .row > .col-@{type}-@{i} {
+    width: @i/@cola*100%;
+    float: left;
+  }
+  .container-fluid > .row > .col-@{type}-@{i} {
+    width: @i/@cola*100%;
+    float: left;
+  }
+  .aaa(@type, @i+1);
+}
+.aaa(s);
+.col-s-hide{
+  display: none;
+}
+.col-m-hide{
+  display: none;
+}
+.col-l-hide{
+  display: none;
+}
+@media screen and (min-width:@num1){
+  .aaa(m);
+  .col-s-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: none;
+  }
+  .col-l-hide{
+    display: none;
+  }
+}
+@media screen and (min-width:@num2){
+  .aaa(l);
+  .col-s-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: none;
+  }
+}

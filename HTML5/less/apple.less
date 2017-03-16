@@ -1,0 +1,359 @@
+@cols:12;
+@num1:1050px;
+@num2:100%;
+body,ul,li{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+/*  1.流式布局
+ *  2.固定布局
+ * 3.越简单的东西越复杂
+ * 4.越复杂的东西越简单
+*/
+/*响应小屏*/
+.container{
+  &-fluid{
+    width:100%;margin:auto;
+    .clear();
+  }
+  &-fluid>.row{
+    width:100%;
+    .clear();
+  }
+  &{
+    width:100%;margin:auto;//固定布局
+    .clear();
+  }
+  & .row{
+    width:100%;
+    .clear();
+  }
+}
+.for(s);
+.col-m-hide{
+  display:block;
+}
+.col-l-hide{
+  display: block;
+}
+.col-s-hide{
+  display: none;
+}
+@media screen and (min-width:@num1){
+  .for(m);
+  .container{
+    position:relative;
+    width:@num1;
+  }
+  .col-m-20{
+    width:20%;
+    float: left;
+  }
+  .col-l-hide{
+    display: block;
+  }
+  .col-s-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: none;
+  }
+}
+@media screen and (min-width:@num2){
+  .for(l);
+  .container{
+    width:@num2;
+    position:relative;
+  }
+  .col-l-20{
+    width:20%;
+    float: left;
+  }
+  .col-m-hide{
+    display: block;
+  }
+  .col-s-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: none;
+  }
+}
+.for(@type,@i:1)when(@i<=@cols){
+  .container>.row>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float:left;
+  }
+  .container>.row>.col-@{type}-offsetl-@{i}{
+    margin-left:@i/@cols*100%;
+  }
+  .container>.row>.col-@{type}-offsetr-@{i}{
+    margin-right:@i/@cols*100%;
+  }
+  .container>.row>.col-@{type}-pull-@{i}{
+    left:@i/@cols*100%;
+    position: relative;
+  }
+  .container>.row>.col-@{type}-push-@{i}{
+    left:-@i/@cols*100%;
+    position: relative;
+  }
+  .container-fluid>.row>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float:left;
+  }
+  .for(@type,@i:@i+1)
+}
+
+.clear(){
+  &{
+    &:before,&:after{
+      content:"";
+      clear:both;
+      display:none;
+    }
+  }
+
+}
+.head{
+  width:100%;
+  height:40px;
+  background:#444444;
+}
+.banner-box{
+  width:100%;
+  //background:#020202;
+}
+.ban-menu{
+  width:100%;
+  height:44px;
+  background: #020202;
+}
+.menu{
+  max-width:980px;
+  margin:0 auto;
+  padding:0 22px;
+  position:relative;
+  height:44px;
+  z-index: 200;
+  background: #020202;
+}
+.mli{
+  margin-right:25px;
+  line-height: 44px;
+  color:#eee;
+  font-size:14px;
+  text-align: center;
+}
+a{
+  color:#eee;
+  text-decoration: none;
+}
+.b_img_box{
+  width:100%;
+  height:540px;
+  position:absolute;
+  top:0;
+}
+.banner_box{
+  width:100%;
+  height:540px;
+  overflow: hidden;
+  position:relative;
+
+}
+.banner_img{
+  width:100%;
+  height:100%;
+  position:relative;
+  top:0;
+}
+
+.b_img_back1{
+  width:100%;
+  height:540px;
+  text-align: center;
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: repeat;
+  background-image: url(http://images.apple.com/cn/home/images/gallery/iphone_alt_large.jpg);
+}
+.img_box1{
+  background: #0a0a0a;
+}
+.img_box2{
+  background: #f2f2f2;
+}
+.img_box3{
+  background: #f6f6f6;
+  width:100%;
+  height:540px;
+  overflow: hidden;
+}
+.b_img_back2{
+  width:100%;
+  height:540px;
+  text-align: center;
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: repeat;
+  background-image: url(http://images.apple.com/v/home/dd/images/gallery/watch_alt_large.jpg);
+}
+.content{
+  height: 33%;
+  width: 100%;
+  padding-top: 32px;
+  box-sizing: border-box;
+  margin-top:16px;
+}
+.content h1,h2{
+  text-align: center;
+}
+.p1{
+  font-size: 32px;
+  line-height: 1.5625;
+  font-weight: 500;
+  letter-spacing: .011em;
+}
+.p2{
+  margin-top:-30px;
+  font-size:40px;
+}
+.h1s{
+  color:#fff;
+}
+.h2s{
+  color:#fff;
+}
+.b_img_back3{
+  width:auto;
+  height:540px;
+  top: 33%;
+  bottom: -10%;
+  left: 0;
+  right: 0;
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  text-align: center;
+  //background-position: center center;
+  background-size: auto 100%;
+  //background-repeat: no-repeat;
+  background-image: url(http://images.apple.com/cn/macbook-pro/images/overview/intro_large.jpg);
+}
+.btn{
+  width:30%;
+  position: relative;
+  bottom:-500px;
+  margin-left:20px;
+  margin:0 auto;
+}
+.btn li{
+  opacity: 0;
+  margin: 0 5px;
+  width: 50px;
+  height: 2px;
+  float: left;
+  background: #808080;
+}
+.btn .first{
+  opacity: 1;
+}
+.cont-img1{
+  display: block;
+  width:100%;
+  height:200px;
+  background-image: url(http://images.apple.com/cn/home/images/promos/accessories_large.jpg);
+}
+.cont-img2{
+  display: block;
+  width:100%;
+  height:200px;
+  background-image: url(http://images.apple.com/v/home/dd/images/shared/promos/ipad_pro_large.jpg);
+}
+.cont-img3{
+  display: block;
+  width:100%;
+  height:200px;
+  background-image: url(http://images.apple.com/v/home/dd/images/shared/promos/airpods_large.jpg);
+}
+.cont-img4{
+  display: block;
+  width:100%;
+  height:200px;
+  background-image: url(http://images.apple.com/cn/home/images/promos/iphone_upgrade_large.jpg);
+}
+.zhong{
+  width:100%;
+  height:200px;
+}
+.footer{
+  width:100%;
+  height:420px;
+  background: #f2f2f2;
+}
+.footer-midd{
+  width:70%;
+  height:100%;
+  margin:0 auto;
+}
+.foo-head p{
+  line-height: 20px;
+  font-size: 10px;
+}
+.foo-head{
+  margin-bottom:10px;
+  padding-top:10px;
+  border-bottom:1px solid #bbb;
+  box-sizing: border-box;
+}
+
+.foo-cont{
+  width:100%;
+  height:80%;
+}
+.item .link{
+  color:#333;
+  font-size:12px;
+}
+.items{
+  border-bottom:1px solid #bbb;
+  margin-bottom: 5px;
+}
+.foo-bq{
+  width:70%;
+  height:100px;
+  margin:0 auto;
+  margin-top:253px;
+}
+.xug{
+  width:100%;
+  heihgt:20px;
+  font-size: 12px;
+}
+.xug-wo{
+  color:#00a2d4;
+}
+.bq{
+  border-top:1px solid #bbb;
+  margin-top:6px;
+}
+.copyright{
+  font-size: 12px;
+  float: left;
+}
+.legal-links{
+  float: left;
+  position: relative;
+  top: -3px;
+  z-index: 1;
+  margin-left:20px;
+}
+.legal-link{
+  color:#333;
+  font-size: 12px;
+}
+.jing{
+  margin-top:24px; color:#999;font-size: 12px;
+}
