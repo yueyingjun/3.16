@@ -1,0 +1,160 @@
+
+@num1:800px;
+@num2:1200px;
+@col:36;
+
+*{
+  box-sizing: border-box;
+}
+
+
+//确认在container元素中才实现响应式布局
+.container{
+  &{
+    margin: auto;
+    width: 600px;
+    .clear();
+  }
+  &>.row{
+    width: 100%;
+    .clear();
+  }
+
+  //流式布局
+  &-fluid{
+    width: 100%;
+    .clear();
+  }
+  &-fluid>.row{
+    width: 100%;
+    .clear();
+  }
+
+}
+
+
+
+//小屏
+.container>.row>.col-s-none{
+  display:none;
+}
+.container>.row>.col-s-block{
+  display:block;
+}
+.container-fluid>.row>.col-s-none{
+  display:none;
+}
+.container-fluid>.row>.col-s-block{
+  display:block;
+}
+.container-fluid>.row>.col-s-w100{
+  text-align: left;
+  background: rgba(0,0,0,0.8);
+  border-bottom:1px solid #ffffff;
+}
+.container-fluid>.row>.col-s-liw100{
+  text-align: left;
+  background: rgba(0,0,0,0.8);
+}
+.container-fluid>.row>.col-s-f{
+  text-align: left;
+  background: rgba(0,0,0,0.8);
+}
+.for(s);
+
+//中屏
+@media screen and (min-width: @num1){
+  .container{
+    width: @num1;
+  }
+  .container>.row>.col-m-none{
+    display:none;
+  }
+  .container>.row>.col-m-block{
+    display:block;
+  }
+  .container-fluid>.row>.col-m-none{
+    display:none;
+  }
+  .container-fluid>.row>.col-m-block{
+    display:block;
+  }
+
+  .container-fluid>.row>.col-m-w100{
+    text-align: left;
+    background: rgba(0,0,0,0);
+    border: none;
+  }
+  .container-fluid>.row>.col-m-liw100{
+    text-align: left;
+    background: rgba(0,0,0,0);
+    border: none;
+  }
+  .for(m);
+}
+//大屏
+@media screen and (min-width: @num2){
+  .container{
+    width: @num2;
+  }
+  .container>.row>.col-l-none{
+    display:none;
+  }
+  .container>.row>.col-l-block{
+    display:block;
+  }
+  .container-fluid>.row>.col-l-none{
+    display:none;
+  }
+  .container-fluid>.row>.col-l-block{
+    display:block;
+  }
+  .for(l);
+}
+
+
+//消除浮动带来的影响函数
+.clear(){
+  &:before,&:after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+//循环输出栅格化的类
+.for(@type,@i:1) when (@i<=@col){
+  .container>.row>.col-@{type}-@{i}{
+    width: @i/@col*100%;
+    float: left;position: relative;
+  }
+  .container-fluid>.row>.col-@{type}-@{i}{
+    width: @i/@col*100%;
+    float: left;
+  }
+  .container>.row>.col-@{type}-offset-@{i}{
+    margin-left: @i/@col*100%;
+  }
+  .container-fluid>.row>.col-@{type}-offset-@{i}{
+    margin-left: @i/@col*100%;
+  }
+  .container>.row>.col-@{type}-push-@{i}{
+    left: @i/@col*100%;
+  }
+  .container>.row>.col-@{type}-pull-@{i}{
+    left: -@i/@col*100%;
+  }
+  .container-fluid>.row>.col-@{type}-push-@{i}{
+    left: @i/@col*100%;
+  }
+  .container-fluid>.row>.col-@{type}-pull-@{i}{
+    left: -@i/@col*100%;
+  }
+  .for(@type,@i:@i+1);
+}
+
+
+
+
+//是否显示
+
