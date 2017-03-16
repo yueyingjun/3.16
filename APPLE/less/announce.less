@@ -1,0 +1,138 @@
+//响应式框架
+@cols:12;
+@num1:1200px;
+@num2:900px;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+//小屏
+.container{
+  &-fluid{
+    width:100%;
+    margin:0 auto;
+    .clear();
+  }
+  &-fluid .row{
+    width:100%;
+    .clear();
+  }
+  &{
+    width:100%;
+    margin:0 auto;
+    .clear();
+  }
+  & .row{
+    width:100%;
+    .clear();
+  }
+  & div:nth-child(1) a{
+    background: url(../img/accessories_small.jpg) center/cover no-repeat;
+  }
+  & div:nth-child(2) a{
+    background: url(../img/ipad_pro_small.jpg) center/cover no-repeat;
+  }
+  & div:nth-child(3) a{
+    background: url(../img/airpods_small.jpg) center/cover no-repeat;
+  }
+  & div:nth-child(4) a{
+    background: url(../img/iphone_upgrade_small.jpg) center/cover no-repeat;
+  }
+}
+.col-l-hide{
+  display:block;
+}
+.col-m-hide{
+  display:block;
+}
+.col-s-hide{
+  display:none;
+}
+.xunhuan(s);
+//中屏
+@media screen and (min-width:@num2){
+  .container{
+    width:100%;
+    & div:nth-child(1) a{
+      background: url(../img/accessories_medium.jpg) center/cover no-repeat;
+    }
+    & div:nth-child(2) a{
+      background: url(../img/ipad_pro_medium.jpg) center/cover no-repeat;
+    }
+    & div:nth-child(3) a{
+      background: url(../img/airpods_medium.jpg) center/cover no-repeat;
+    }
+    & div:nth-child(4) a{
+      background: url(../img/iphone_upgrade_medium.jpg) center/cover no-repeat;
+    }
+  }
+  .col-l-hide{
+    display:block;
+  }
+  .col-s-hide{
+    display:block;
+  }
+  .col-m-hide{
+    display:none;
+  }
+  .xunhuan(m);
+}
+//大屏
+@media screen and (min-width:@num1){
+  .container{
+    width:100%;
+    & div:nth-child(1) a{
+      background: url(../img/accessories_large.jpg) center/cover no-repeat;
+    }
+    & div:nth-child(2) a{
+      background: url(../img/ipad_pro_large.jpg) center/cover no-repeat;
+    }
+    & div:nth-child(3) a{
+      background: url(../img/airpods_large.jpg) center/cover no-repeat;
+    }
+    & div:nth-child(4) a{
+      background: url(../img/iphone_upgrade_large.jpg) center/cover no-repeat;
+    }
+  }
+  .col-s-hide{
+    display:block;
+  }
+  .col-m-hide{
+    display:block;
+  }
+  .col-l-hide{
+    display:none;
+  }
+  .xunhuan(l);
+}
+.xunhuan(@type,@i:1) when (@i<=@cols){
+  .container>.row>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float:left;
+    position:relative;
+  }
+  .container>.row>.col-@{type}-offset-@{i}{
+    margin-left:@i/@cols*100%;
+  }
+  .container>.row>.col-@{type}-push-@{i}{
+    left:@i/@cols*100%;
+  }
+  .container>.row>.col-@{type}-pull-@{i}{
+    left:-@i/@cols*100%;
+  }
+  .container-fluid>.row>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float:left;
+  }
+  .xunhuan(@type,@i:@i+1);
+}
+.clear(){
+  &{
+    &:before,&:after{
+      content:"";
+      clear:both;
+      display:block;
+    }
+  }
+}
