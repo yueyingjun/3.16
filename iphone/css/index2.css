@@ -1,0 +1,70 @@
+body,html,ul,div{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: white;
+	line-height: 3.14286;
+}
+a,li{
+	text-decoration:none;
+	list-style:none;
+	color: white;
+}
+.bg{
+	background: rgba(0,0,0,.8);
+	width: 100%;
+}
+/*.iconfont{
+	font-size:21px;
+	height: 44px;
+	text-align: center;
+}*/
+.nav{
+	margin:0 auto;
+}
+.nav:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+.height{
+	height: 568px;
+	overflow: hidden;
+}
+.one{
+	/*height: 200px;*/
+	background: url(../img/111.jpg) no-repeat center center;
+	background-size: cover;
+	
+}
+.two{
+	/*height: 200px;*/
+	background: url(../img/222.jpg) no-repeat center center;
+	background-size: cover;
+	
+}
+.three{
+	/*height: 200px;*/
+	background: url(../img/333.jpg) no-repeat center center;
+	background-size: cover;
+	
+}
+.four{
+	/*height: 200px;*/
+	background: url(../img/444.jpg) no-repeat center center;
+	background-size: cover;
+}
+.clear1 li a{
+	display: block;
+	height: 200px;
+}
+h3{
+	color: #888;
+	border-bottom: 1px solid #888;
+	font-size: 13px;
+}
+ul.color li{
+	color: #888;
+	line-height:1.8;
+}
+
