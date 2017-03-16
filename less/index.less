@@ -1,0 +1,388 @@
+@col_num:12;
+@max-width: 1068px;
+@medium_width:768px;
+@min_width:735px;
+// 顶部导航
+.topnav{
+    position: relative;
+    z-index: 2;
+    background: #444;
+    line-height: 1;
+    width: 100%;
+    right: 0;
+    top:0;
+    height: 40px;
+}
+
+/*导航 start*/
+.navbox{
+  position:relative;
+  height:44px;
+  width:100%;
+  background:#000;
+  z-index: 4;
+}
+.navbox .nav{
+  width:100%;
+  height:44px;
+  overflow:hidden;
+  background:#000;
+  position:relative;
+  left:0;
+  top:40px;
+
+  .browser_hack(box-sizing,border-box);
+
+  margin:0 auto;
+  padding-left:47px;
+  padding-right:47px;
+}
+
+.navbox .nav li{
+  height:43px;
+  line-height:43px;
+  text-align:left;
+  border-bottom:1px solid #555;
+}
+.navbox .nav li a{
+  display:inline-block;
+  width:20px;
+  height:100%;
+  text-align:Center;
+  color:#fff;
+  font-weight:200;
+  background-repeat:no-repeat;
+  background-position:center center;
+  transition:all 0.5s;
+}
+.navbox .nav li a:hover{
+  opacity:0.7;
+}
+.navbox .nav li:nth-child(1) a{
+  width: 100%;
+}
+
+  @media screen and (min-width: @medium_width){
+
+    .navbox{
+      .browser_hack(transition,all 1s);
+      background:#333;
+    }
+    .navbox .nav{
+      .browser_hack(transition,all 1s);
+      width:100%;
+      height:100%;
+      position:static;
+      padding:0;
+      background:transparent;
+    }
+
+    .navbox .nav li{
+      width:10%;
+      text-align:Center;
+      float:left;
+    }
+
+
+  }
+
+/*顶部导航 end*/
+/*banner start*/
+.banner{
+  height:498px;
+  width:100%;
+  position:relative;
+}
+.banner .imgbox{
+  width:100%;
+  height:100%;
+}
+.banner .imgbox>li{
+  height:100%;
+  width:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+.banner .imgbox>li a{
+  display:block;
+  height:100%;
+  width:100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+.banner .imgbox>li{
+  opacity:0;
+}
+.banner .imgbox>li:nth-child(2){
+  opacity:1;
+}
+.banner .imgbox>li:nth-child(1) a{
+  .browser_hack(background-size,auto 100%);
+  background-image:url(../images/gallery/iphone_alt_small.jpg)
+}
+.banner .imgbox>li:nth-child(2) a{
+  .browser_hack(background-size,100%);
+  background-image:url(../images/gallery/watch_alt_portrait_small.jpg)
+}
+.banner .imgbox>li:nth-child(3) a{
+  background-position:center bottom;
+  .browser_hack(background-size,auto 100%);
+  background-image:url(../images/gallery/macbookpro_portrait_small.jpg)
+}
+@media screen and (min-width: 512px){
+  .banner .imgbox>li:nth-child(1) a{
+    background-image:url(../images/gallery/iphone_alt_medium.jpg)
+  }
+  .banner .imgbox>li:nth-child(2) a{
+    background-image:url(../images/gallery/watch_alt_medium.jpg)
+  }
+  .banner .imgbox>li:nth-child(3) a{
+    .browser_hack(background-size,100%);
+    background-image:url(../images/gallery/macbookpro_medium.jpg)
+  }
+}
+
+@media screen and (min-width: @medium_width){
+  .banner .imgbox>li:nth-child(1) a{
+    background-image:url(../images/gallery/iphone_alt_large.jpg)
+  }
+  .banner .imgbox>li:nth-child(2) a{
+    background-image:url(../images/gallery/watch_alt_large.jpg)
+  }
+  .banner .imgbox>li:nth-child(3) a{
+    background-image:url(../images/gallery/macbookpro_large.jpg)
+  }
+}
+
+.banner .btnbox{
+  width:180px;
+  height:2px;
+  position:absolute;
+  left:50%;
+  bottom:32px;
+  margin-left:-90px;
+}
+.banner .btnbox li{
+  width:50px;
+  margin:0 5px;
+  float:left;
+}
+.banner .btnbox li span{
+  display:inline-block;
+  height:100%;
+  width:100%;
+  background:#808080;
+}
+
+/*banner end*/
+
+/*商品推销 start*/
+.promos{
+  width:100%;
+}
+.promos .row li{
+  height:203px;
+  border:1px solid transparent;
+  float:left;
+  .browser_hack(box-sizing,border-box);
+}
+.promos .row li a{
+  display:block;
+  height:100%;
+  width:100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+.promos .row li:nth-child(1) a{
+  background-image:url(../images/promos/accessories_small.jpg);
+}
+.promos .row li:nth-child(2) a{
+  background-image:url(../images/promos/ipad_pro_small.jpg);
+}
+.promos .row li:nth-child(3) a{
+  background-image:url(../images/promos/iphone_upgrade_small.jpg);
+}
+.promos .row li:nth-child(4) a{
+  background-image:url(../images/promos/airpods_small.jpg);
+}
+
+@media screen and (min-width: @min_width) {
+  .promos .row li:nth-child(1) a{
+    background-image:url(../images/promos/accessories_medium.jpg);
+  }
+  .promos .row li:nth-child(2) a{
+    background-image:url(../images/promos/ipad_pro_medium.jpg);
+  }
+  .promos .row li:nth-child(3) a{
+    background-image:url(../images/promos/iphone_upgrade_medium.jpg);
+  }
+  .promos .row li:nth-child(4) a{
+    background-image:url(../images/promos/airpods_medium.jpg);
+  }
+}
+
+@media screen and (min-width: @max-width) {
+  .promos .row li:nth-child(1) a{
+    background-image:url(../images/promos/accessories_large.jpg);
+  }
+  .promos .row li:nth-child(2) a{
+    background-image:url(../images/promos/ipad_pro_large.jpg);
+  }
+  .promos .row li:nth-child(3) a{
+    background-image:url(../images/promos/iphone_upgrade_large.jpg);
+  }
+  .promos .row li:nth-child(4) a{
+    background-image:url(../images/promos/airpods_large.jpg);
+  }
+}
+
+/*商品推销 end*/
+.browser_hack(@type,@argu){
+  -moz-@{type}:@argu;
+  -ms-@{type}:@argu;
+  -webkit-@{type}:@argu;
+  -o-@{type}:@argu;
+  @{type}:@argu;
+}
+
+.container{
+  &{
+    .clear();
+    width:100%;
+
+    .col-l-hide{
+      display:none;
+    }
+    .col-m-hide{
+      display:none;
+    }
+    .col-s-hide{
+      display:none;
+    }
+
+  }
+  &>.row{
+    width:100%;
+    .clear();
+  }
+  &-fluid{
+    width:100%;
+    .clear();
+    &>.row{
+      width:100%;
+      .clear();
+    }
+  }
+}
+
+.for(s);
+
+.for(@type,@i:1) when (@i<=@col_num){
+  .container>.row>.col-@{type}-@{i}{
+    width:@i/@col_num*100%;
+    float:left;
+  }
+  .container-fluid>.row>.col-@{type}-@{i}{
+    width: @i/ @col_num*100%;
+    float:left;
+  }
+  .container-fluid>.row>.col-@{type}-offset-@{i}{
+    margin-left: @i/ @col_num*100%;
+    float:left;
+  }
+  .container-fluid>.row>.col-@{type}-left-@{i}{
+    left: @i/ @col_num*100%;
+    float:left;
+  }
+  .container-fluid>.row>.col-@{type}-right-@{i}{
+    right: @i/ @col_num*100%;
+    float:left;
+  }
+  .for(@type,@i+1);
+}
+.clear(){
+  &:after{
+    content:"";
+    display:none;
+    clear:both;
+  }
+}
+
+@media screen and (min-width:@min_width){
+  .container{
+    width:100%;
+
+    .col-l-hide{
+      display:none;
+    }
+    .col-m-hide{
+      display:none;
+    }
+    .col-s-hide{
+      display:none;
+    }
+
+  }
+
+  .for(m1);
+
+}
+
+@media screen and (min-width:@medium_width) {
+  .container{
+    width:100%;
+
+    .col-l-hide{
+      display:none;
+    }
+    .col-m-hide{
+      display:none;
+    }
+    .col-s-hide{
+      display:none;
+    }
+
+  }
+
+  .for(m2);
+}
+
+@media screen and (min-width:@max-width) {
+  .container{
+    width:100%;
+
+    .col-l-hide{
+      display:none;
+    }
+    .col-m-hide{
+      display:none;
+    }
+    .col-s-hide{
+      display:none;
+    }
+
+  }
+
+  .for(l);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

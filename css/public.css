@@ -1,0 +1,22 @@
+/*
+* @Author: Administrator
+* @Date:   2017-03-16 17:34:14
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-03-17 06:34:49
+*/
+body,ul,li,dd,dl,dt,p,h1,h2,h3,h4,h5,h6,input,div{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size:14px;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+
+img{
+    border:0;
+}
