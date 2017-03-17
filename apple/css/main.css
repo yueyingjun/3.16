@@ -1,0 +1,1274 @@
+.container {
+  width: 100%;
+}
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+.container-fluid:before,
+.container-fluid:after {
+  content: "";
+  clear: both;
+  display: none;
+}
+.container-fluid .row {
+  width: 100%;
+}
+.container-fluid .row:before,
+.container-fluid .row:after {
+  content: "";
+  clear: both;
+  display: none;
+}
+.container:before,
+.container:after {
+  content: "";
+  clear: both;
+  display: none;
+}
+.container .row {
+  width: 100%;
+}
+.container .row:before,
+.container .row:after {
+  content: "";
+  clear: both;
+  display: none;
+}
+.container-fluid > .row > .col-l-1 {
+  width: 8.33333333%;
+  float: left;
+}
+.container > .row > .col-l-1 {
+  width: 8.33333333%;
+  float: left;
+}
+.container-fluid > .row > .col-l-2 {
+  width: 16.66666667%;
+  float: left;
+}
+.container > .row > .col-l-2 {
+  width: 16.66666667%;
+  float: left;
+}
+.container-fluid > .row > .col-l-3 {
+  width: 25%;
+  float: left;
+}
+.container > .row > .col-l-3 {
+  width: 25%;
+  float: left;
+}
+.container-fluid > .row > .col-l-4 {
+  width: 33.33333333%;
+  float: left;
+}
+.container > .row > .col-l-4 {
+  width: 33.33333333%;
+  float: left;
+}
+.container-fluid > .row > .col-l-5 {
+  width: 41.66666667%;
+  float: left;
+}
+.container > .row > .col-l-5 {
+  width: 41.66666667%;
+  float: left;
+}
+.container-fluid > .row > .col-l-6 {
+  width: 50%;
+  float: left;
+}
+.container > .row > .col-l-6 {
+  width: 50%;
+  float: left;
+}
+.container-fluid > .row > .col-l-7 {
+  width: 58.33333333%;
+  float: left;
+}
+.container > .row > .col-l-7 {
+  width: 58.33333333%;
+  float: left;
+}
+.container-fluid > .row > .col-l-8 {
+  width: 66.66666667%;
+  float: left;
+}
+.container > .row > .col-l-8 {
+  width: 66.66666667%;
+  float: left;
+}
+.container-fluid > .row > .col-l-9 {
+  width: 75%;
+  float: left;
+}
+.container > .row > .col-l-9 {
+  width: 75%;
+  float: left;
+}
+.container-fluid > .row > .col-l-10 {
+  width: 83.33333333%;
+  float: left;
+}
+.container > .row > .col-l-10 {
+  width: 83.33333333%;
+  float: left;
+}
+.container-fluid > .row > .col-l-11 {
+  width: 91.66666667%;
+  float: left;
+}
+.container > .row > .col-l-11 {
+  width: 91.66666667%;
+  float: left;
+}
+.container-fluid > .row > .col-l-12 {
+  width: 100%;
+  float: left;
+}
+.container > .row > .col-l-12 {
+  width: 100%;
+  float: left;
+}
+.container {
+  width: 100%;
+}
+.col-s-hide {
+  display: block;
+}
+.col-m-hide {
+  display: block;
+}
+.col-l-hide {
+  display: none;
+}
+@media only screen and (max-width: 1068px) {
+  .container-fluid > .row > .col-m-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-3 {
+    width: 25%;
+    float: left;
+  }
+  .container > .row > .col-m-3 {
+    width: 25%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-6 {
+    width: 50%;
+    float: left;
+  }
+  .container > .row > .col-m-6 {
+    width: 50%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-9 {
+    width: 75%;
+    float: left;
+  }
+  .container > .row > .col-m-9 {
+    width: 75%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-12 {
+    width: 100%;
+    float: left;
+  }
+  .container > .row > .col-m-12 {
+    width: 100%;
+    float: left;
+  }
+  .container {
+    width: 100%;
+  }
+  .col-s-hide {
+    display: block;
+  }
+  .col-l-hide {
+    display: block;
+  }
+  .col-m-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .container-fluid > .row > .col-s-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-3 {
+    width: 25%;
+    float: left;
+  }
+  .container > .row > .col-s-3 {
+    width: 25%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-6 {
+    width: 50%;
+    float: left;
+  }
+  .container > .row > .col-s-6 {
+    width: 50%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-9 {
+    width: 75%;
+    float: left;
+  }
+  .container > .row > .col-s-9 {
+    width: 75%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-12 {
+    width: 100%;
+    float: left;
+  }
+  .container > .row > .col-s-12 {
+    width: 100%;
+    float: left;
+  }
+  .container {
+    width: 735px;
+  }
+  .col-m-hide {
+    display: block;
+  }
+  .col-l-hide {
+    display: block;
+  }
+  .col-s-hide {
+    display: none;
+  }
+}
+.container2 {
+  width: 100%;
+}
+.container2-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+.container2-fluid:before,
+.container2-fluid:after {
+  content: "";
+  clear: both;
+  display: none;
+}
+.container2-fluid .row2 {
+  width: 100%;
+}
+.container2-fluid .row2:before,
+.container2-fluid .row2:after {
+  content: "";
+  clear: both;
+  display: none;
+}
+.container2:before,
+.container2:after {
+  content: "";
+  clear: both;
+  display: none;
+}
+.container2 .row2 {
+  width: 100%;
+}
+.container2 .row2:before,
+.container2 .row2:after {
+  content: "";
+  clear: both;
+  display: none;
+}
+.container-fluid > .row > .col-l-1 {
+  width: 8.33333333%;
+  float: left;
+}
+.container > .row > .col-l-1 {
+  width: 8.33333333%;
+  float: left;
+}
+.container-fluid > .row > .col-l-2 {
+  width: 16.66666667%;
+  float: left;
+}
+.container > .row > .col-l-2 {
+  width: 16.66666667%;
+  float: left;
+}
+.container-fluid > .row > .col-l-3 {
+  width: 25%;
+  float: left;
+}
+.container > .row > .col-l-3 {
+  width: 25%;
+  float: left;
+}
+.container-fluid > .row > .col-l-4 {
+  width: 33.33333333%;
+  float: left;
+}
+.container > .row > .col-l-4 {
+  width: 33.33333333%;
+  float: left;
+}
+.container-fluid > .row > .col-l-5 {
+  width: 41.66666667%;
+  float: left;
+}
+.container > .row > .col-l-5 {
+  width: 41.66666667%;
+  float: left;
+}
+.container-fluid > .row > .col-l-6 {
+  width: 50%;
+  float: left;
+}
+.container > .row > .col-l-6 {
+  width: 50%;
+  float: left;
+}
+.container-fluid > .row > .col-l-7 {
+  width: 58.33333333%;
+  float: left;
+}
+.container > .row > .col-l-7 {
+  width: 58.33333333%;
+  float: left;
+}
+.container-fluid > .row > .col-l-8 {
+  width: 66.66666667%;
+  float: left;
+}
+.container > .row > .col-l-8 {
+  width: 66.66666667%;
+  float: left;
+}
+.container-fluid > .row > .col-l-9 {
+  width: 75%;
+  float: left;
+}
+.container > .row > .col-l-9 {
+  width: 75%;
+  float: left;
+}
+.container-fluid > .row > .col-l-10 {
+  width: 83.33333333%;
+  float: left;
+}
+.container > .row > .col-l-10 {
+  width: 83.33333333%;
+  float: left;
+}
+.container-fluid > .row > .col-l-11 {
+  width: 91.66666667%;
+  float: left;
+}
+.container > .row > .col-l-11 {
+  width: 91.66666667%;
+  float: left;
+}
+.container-fluid > .row > .col-l-12 {
+  width: 100%;
+  float: left;
+}
+.container > .row > .col-l-12 {
+  width: 100%;
+  float: left;
+}
+.container2 {
+  width: 100%;
+}
+.col-s2-hide {
+  display: block;
+}
+.col-m2-hide {
+  display: block;
+}
+.col-l2-hide {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .container-fluid > .row > .col-m-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-3 {
+    width: 25%;
+    float: left;
+  }
+  .container > .row > .col-m-3 {
+    width: 25%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-6 {
+    width: 50%;
+    float: left;
+  }
+  .container > .row > .col-m-6 {
+    width: 50%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-9 {
+    width: 75%;
+    float: left;
+  }
+  .container > .row > .col-m-9 {
+    width: 75%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-12 {
+    width: 100%;
+    float: left;
+  }
+  .container > .row > .col-m-12 {
+    width: 100%;
+    float: left;
+  }
+  .container2 {
+    width: 100%;
+  }
+  .col-s2-hide {
+    display: block;
+  }
+  .col-l2-hide {
+    display: block;
+  }
+  .col-m2-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container-fluid > .row > .col-s2-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s2-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s2-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-3 {
+    width: 25%;
+    float: left;
+  }
+  .container > .row > .col-s2-3 {
+    width: 25%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s2-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s2-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-6 {
+    width: 50%;
+    float: left;
+  }
+  .container > .row > .col-s2-6 {
+    width: 50%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s2-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s2-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-9 {
+    width: 75%;
+    float: left;
+  }
+  .container > .row > .col-s2-9 {
+    width: 75%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s2-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s2-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s2-12 {
+    width: 100%;
+    float: left;
+  }
+  .container > .row > .col-s2-12 {
+    width: 100%;
+    float: left;
+  }
+  .container2 {
+    width: 735px;
+  }
+  .col-m2-hide {
+    display: block;
+  }
+  .col-l2-hide {
+    display: block;
+  }
+  .col-s2-hide {
+    display: none;
+  }
+}
+/*顶部广告开始*/
+.topggBox {
+  width: 100%;
+  height: 40px;
+  background: #444;
+}
+.topgg {
+  width: 976px;
+  height: 40px;
+  margin: 0 auto;
+}
+.adv-wrapper-text {
+  float: right;
+  color: #a8a8aa;
+  font-size: 12px;
+  font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 40px;
+}
+/*中屏顶部*/
+@media only screen and (max-width: 1023px) {
+  .topgg {
+    min-width: 767px;
+  }
+}
+/*小屏顶部*/
+@media only screen and (max-width: 767px) {
+  .topgg {
+    min-width: 600px;
+  }
+}
+/*顶部广告结束*/
+/*导航开始*/
+#globalnav {
+  width: 100%;
+  height: 44px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.contentnav {
+  width: 1024px;
+  padding: 0 22px;
+  margin: 0 auto;
+}
+.navlist {
+  margin: 0 -10px;
+  width: auto;
+  height: 44px;
+  text-align: justify;
+}
+.navlist .navitem {
+  display: inline-block;
+  position: relative;
+  height: 44px;
+  z-index: 1;
+  vertical-align: top;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), url('iconfont.woff') format('woff'), url('iconfont.ttf') format('truetype'), url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navlist .navitem a {
+  font-size: 14px;
+  line-height: 3.14286;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 10px;
+  height: 44px;
+  opacity: 1;
+  background: no-repeat;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-tap-highlight-color: transparent;
+  outline-offset: -7px;
+}
+.navlist .navitem a:hover {
+  opacity: .7;
+}
+@media only screen and (max-width: 1024px) {
+  .container-fluid > .row > .col-m-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-3 {
+    width: 25%;
+    float: left;
+  }
+  .container > .row > .col-m-3 {
+    width: 25%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-6 {
+    width: 50%;
+    float: left;
+  }
+  .container > .row > .col-m-6 {
+    width: 50%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-9 {
+    width: 75%;
+    float: left;
+  }
+  .container > .row > .col-m-9 {
+    width: 75%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container > .row > .col-m-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container > .row > .col-m-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-m-12 {
+    width: 100%;
+    float: left;
+  }
+  .container > .row > .col-m-12 {
+    width: 100%;
+    float: left;
+  }
+  .container {
+    width: 100%;
+  }
+  .col-s-hide {
+    display: block;
+  }
+  .col-l-hide {
+    display: block;
+  }
+  .col-m-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container-fluid > .row > .col-s-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s-1 {
+    width: 8.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s-2 {
+    width: 16.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-3 {
+    width: 25%;
+    float: left;
+  }
+  .container > .row > .col-s-3 {
+    width: 25%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s-5 {
+    width: 41.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-6 {
+    width: 50%;
+    float: left;
+  }
+  .container > .row > .col-s-6 {
+    width: 50%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s-7 {
+    width: 58.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s-8 {
+    width: 66.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-9 {
+    width: 75%;
+    float: left;
+  }
+  .container > .row > .col-s-9 {
+    width: 75%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container > .row > .col-s-10 {
+    width: 83.33333333%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container > .row > .col-s-11 {
+    width: 91.66666667%;
+    float: left;
+  }
+  .container-fluid > .row > .col-s-12 {
+    width: 100%;
+    float: left;
+  }
+  .container > .row > .col-s-12 {
+    width: 100%;
+    float: left;
+  }
+  .container {
+    width: 100%;
+  }
+  .col-m-hide {
+    display: block;
+  }
+  .col-l-hide {
+    display: block;
+  }
+  .col-s-hide {
+    display: none;
+  }
+}
+/*导航结束*/
+/*banner开始*/
+.bannerbox {
+  width: 100%;
+  height: 540px;
+  position: relative;
+}
+.bannerbox li {
+  display: block;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.bannerbox li:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bannerbox li:nth-child(2) {
+  display: none;
+}
+.bannerbox li:nth-child(3) {
+  display: none;
+}
+.bannerbox li img {
+  width: 100%;
+}
+.container-fluid {
+  position: relative;
+}
+.btnbox {
+  width: 182px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9999;
+}
+.btnbox li {
+  opacity: 0.2;
+  float: left;
+  margin: 0 5px;
+  width: 50px;
+  height: 22px;
+}
+.btnbox .first {
+  opacity: 1;
+}
+.btnbox li span {
+  display: inline-block;
+  z-index: 1;
+  height: 2px;
+  width: 100%;
+  background-color: #808080;
+  opacity: 0.2;
+}
+/*banner结束*/
+/*天生一对图片开始*/
+.promo {
+  height: 202px;
+}
+.promo li {
+  box-sizing: border-box;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.promo li:nth-child(4) {
+  border-right: none;
+}
+.promo li a {
+  display: block;
+  background-position: center center;
+  background-size: 360px 200px;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+.promo li a.promo-accessories {
+  background-image: url(../img/accessories_large.jpg);
+}
+.promo li a.promo-ipad-pro {
+  background-image: url(../img/ipad_pro_large.jpg);
+}
+.promo li a.promo-airpods {
+  background-image: url(../img/airpods_large.jpg);
+}
+.promo li a.promo-iphone-upgrade {
+  background-image: url(../img/iphone_upgrade_large.jpg);
+}
+/*天生一对图片结束*/
+/*选购及了解开始*/
+.ac-content {
+  background-color: #f2f2f2;
+  color: #333;
+  min-width: 1024px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.sosumi {
+  width: 1024px;
+  border-bottom: 1px solid #d6d6d6;
+  color: #888;
+  padding: 20px 0 15px;
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+.directory {
+  width: 1024px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.dirbox {
+  width: 20%;
+  float: left;
+}
+.dirlabel .dirtitle {
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 6px;
+}
+.dirlist {
+  width: 100%;
+  margin-right: 20px;
+}
+.dirlist2 {
+  margin-bottom: 20px;
+}
+.dirlist li a {
+  color: #555;
+  font-size: 11px;
+  font-width: 400;
+  line-height: 15px;
+}
+.dirlist li a:hover {
+  text-decoration: underline;
+}
+/*选购及了解结束*/
+/*footer开始*/
+.footer {
+  width: 980px;
+  height: 54px;
+  padding: 34px 0 21px;
+  margin: 20px auto;
+  clear: both;
+}
+.footer-shop {
+  margin-bottom: 7px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #d6d6d6;
+  font-size: 11px;
+}
+.nowrap a {
+  color: #0070c9;
+}
+.nowrap a:hover {
+  text-decoration: underline;
+}
+.footer-legal {
+  position: relative;
+  top: -3px;
+  z-index: 1;
+}
+.footer-legal-copyright {
+  font-size: 11px;
+  font-width: bold;
+  margin-right: 30px;
+  float: left;
+  margin-top: 3px;
+}
+.footer-legal-links {
+  position: relative;
+  top: -3px;
+  z-index: 1;
+}
+.footer-legal-link {
+  font-size: 12px;
+  color: #555;
+  border-right: 1px solid #d6d6d6;
+  margin-right: 10px;
+  padding-right: 12px;
+  display: inline-block;
+  margin-top: 3px;
+  white-space: nowrap;
+}
+.footer-legal-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.footer-locale {
+  float: right;
+  z-index: 2;
+  white-space: nowrap;
+  position: relative;
+  top: -22px;
+  font-size: 11px;
+}
+.footer-locale a {
+  color: #555;
+}
+.footer-locale a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.footer-locale a span {
+  background-size: 16px 16px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/16.png) left center no-repeat;
+  padding-right: 5px;
+  cursor: pointer;
+  float: left;
+  margin-top: -1px;
+}
+.beian {
+  clear: both;
+  margin-bottom: 20px;
+  color: #999;
+  font-size: 11px;
+}
+.beian a {
+  color: #999;
+}
+/*footer结束*/
