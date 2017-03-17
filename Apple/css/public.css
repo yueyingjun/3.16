@@ -1,0 +1,303 @@
+*{
+    padding: 0;margin: 0;list-style: none;box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+    border-top: 1px solid transparent;
+    margin-top: -1px;
+    position: relative;
+}
+html{
+    margin-top: 40px !important;
+     background-color: #FFF;
+ }
+.add{
+    position: absolute;
+    background: #444;
+    line-height: 1;
+    margin-top: -40px;
+    width: 100%;
+    right: 0;
+    height: 40px;
+    z-index: 9999;
+}
+.addtext{
+    color: #a8a8aa;
+    max-width: 976px;
+    overflow: hidden;
+    text-align: right;
+    line-height: 40px;
+    margin: auto;
+    height: 100%;
+    font-size: 12px;
+}
+nav{
+    height: 48px;
+    max-height: 44px;
+    position: absolute;
+    top:0;left: 0;right: 0;
+    z-index: 99999;
+    min-width: 1024px;
+    background: rgba(0,0,0,0.8);
+    font-size: 17px;
+}
+.boxcenter{
+    margin: 0 auto;
+    padding: 0 22px;
+    max-width: 980px;
+    position: relative;
+    z-index: 2;
+}
+
+.bigdaohang li{
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    z-index: 1;
+    vertical-align: top;
+}
+.photo{
+    font-size: 14px;
+    line-height: 3.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 10px;
+    height: 44px;
+    opacity: 1;
+    background: no-repeat;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-tap-highlight-color: transparent;
+    outline-offset: -7px;
+}
+.logo{
+    background-size: 20px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large.svg);
+    background-position: center center;
+    width: 20px;
+}
+.logos{
+    background-size: 20px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large.svg);
+    background-position: center center;
+    width: 20px;
+}
+.mac{
+    background-repeat: no-repeat;
+    background-image: url(../img/mvc.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2em;
+    max-width: 47.6px;
+}
+.ipad{
+    background-repeat: no-repeat;
+    background-image: url(../img/ipad.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.92857em;;
+    max-width: 45.9px;
+}
+.iphone{
+    background-repeat: no-repeat;
+    background-image: url(../img/iphone.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3.14286em;
+    max-width: 74.8px;
+}
+.watch{
+    background-repeat: no-repeat;
+    background-image: url(../img/watch.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2.85714em;
+    max-width: 68px;
+}
+.music{
+    background-repeat: no-repeat;
+    background-image: url(../img/music.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2.85714em;
+    max-width: 47.6px;
+}
+.jishu{
+    background-repeat: no-repeat;
+    background-image: url(../img/jszc.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3.28571em;
+    max-width: 47.6px;
+}
+.sousuo{
+    background-size: 16px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../img/sousuo.svg);
+    background-position: center center;
+    width: 16px;
+}
+.gouwu{
+    background-size: 14px 45px;
+    background-repeat: no-repeat;
+    background-image: url(../img/gouwu.svg);
+    background-position: center center;
+    width: 14px;
+}
+.gouwus{
+    background-size: 14px 45px;
+    background-repeat: no-repeat;
+    background-image: url(../img/gouwu.svg);
+    background-position: center center;
+    width: 14px;
+}
+.bigdaohang{
+    cursor: default;
+    margin: 0 -10px;
+    width: auto;
+    height: 44px;
+    text-align: justify;
+}
+.bigdaohang:after{
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+.bigdaohang .photo:hover {
+    opacity: .65;
+}
+.banner{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    max-height: 100%;
+    min-height: 540px;
+}
+.gallery {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 100%;
+}
+.dian{
+    position: absolute;
+    z-index: 1000;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+}
+.tablist{
+    margin: 0;
+    list-style: none;
+}
+.banner-b{
+    height: 100%;
+}
+.imgas1{
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/banner1.jpg);
+}
+.chanpin{
+    border-bottom: 2px solid #fff;
+    position: relative;
+    z-index: 1;
+}
+.chanpin:before, .chanpin:after {
+    content: ' ';
+    display: table;
+}
+.chanpin ul{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border-bottom: 2px solid #fff;
+}
+.promo{
+    list-style-type: none;
+    box-sizing: border-box;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+}
+.footer{
+    font-size: 11px;
+    line-height: 1.45455;
+    font-weight: 400;
+    letter-spacing: .005em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    min-width: 1024px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.content{
+    margin: 0 auto;
+    padding: 0 22px;
+    max-width: 980px;
+
+}
+.dibu{
+    font-size: 11px;
+    line-height: 1.27273;
+    font-weight: 400;
+    letter-spacing: .005em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+.zibox{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+}
+h3{
+    font-size: 11px;
+    line-height: 1.27273;
+    font-weight: 600;
+    letter-spacing: .005em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0;
+    margin-bottom: 6px;
+}
+.zibox ul li{
+    display: block;
+    pointer-events: auto;
+    margin-bottom: 6px;
+}
+.zibox ul li a{
+    color: #555;
+    text-decoration: none;
+}
