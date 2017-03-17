@@ -1,0 +1,280 @@
+.main{
+    list-style: none;
+    margin:0 auto;
+}
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd,input,i,em,form,b,s{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+i,em,b,s{
+    font-style: normal;
+}
+img{
+    border:none;
+}
+a{
+    text-decoration: none;
+}
+.adv-wrap{
+    position: absolute;
+    background: #444;
+    line-height: 1;
+    width: 100%;
+    right: 0;
+    height: 40px;
+    z-index: 9999;
+}
+.adv-wrap .text{
+    color: #8a8a8a;
+    font-size: 12px;
+    display: block;
+    line-height: 40px;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-align: right;
+    max-width: 976px;
+    margin: 0 auto;
+}
+.ac_content{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+nav{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    min-width: 1024px;
+    height: 48px;
+    max-height: 44px;
+    background: rgba(0,0,0,0.8);
+    font-size: 17px;
+}
+.nav_list{
+    cursor: default;
+    margin: 0 -10px;
+    width: auto;
+    height: 44px;
+    text-align:justify;  /*两端对齐*/
+    text-justify: distribute-all-lines;
+
+}
+/*定义伪类--使用两端对齐*/
+.nav_list::after{
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+.nav_list .ac_item{
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    z-index: 1;
+    vertical-align: top;
+}
+.ac_link{
+    font-size: 14px;
+    line-height: 3.14286;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 10px;
+    height: 44px;
+    opacity: 1;
+    background: no-repeat;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-tap-highlight-color: transparent;
+    outline-offset: -7px;
+}
+.ac_link:hover{
+    opacity: 0.65;
+}
+.ac_log{
+    background-size: 20px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large.svg);
+    background-position: center center;
+    width: 20px;
+}
+.ac_link span{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+    top: 50%;
+}
+.ac_link_mac{
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large1.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2em;
+    max-width: 47.6px;
+}
+.ac_link_ipad{
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large2.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.92857em;
+    max-width: 45.9px;
+}
+.ac_link_iPhone{
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large3.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3.14286em;
+    max-width: 74.8px;
+}
+.ac_link_watch{
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large4.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2.85714em;
+    max-width: 68px;
+}
+.ac_link_music{
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large5.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2.64286em;
+    max-width: 62.9px;
+}
+.ac_link_support{
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large6.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3.28571em;
+    max-width: 78.2px;
+}
+.ac_link_search{
+    background-size: 16px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large7.svg);
+    background-position: center center;
+    width: 16px;
+}
+.ac_link_bg{
+    background-size: 14px 45px;
+    background-repeat: no-repeat;
+    background-image: url(../img/image_large8.svg);
+    background-position: center center;
+    width: 14px;
+}
+/*主体部分*/
+.main{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.gallery-container{
+    height: calc(100vh - 76px);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    max-height: 100%;
+    min-height: 540px;
+}
+.gallery-container .gallery{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 100%;
+}
+.gallery-slide-wrapper{
+    height: 100%;
+}
+.gallery-item_at{
+    background: #0a0a0a;
+}
+.gallery-item{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+}
+.gallery_img{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 110%;
+}
+.gallery-item .img_iphone7{
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/iphone_alt_large.jpg);
+}
+.prowms{
+    border-bottom: 2px solid #fff;
+    position: relative;
+    z-index: 1;
+}
+.prowms .prom-position{
+    list-style-type: none;
+    box-sizing: border-box;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px
+}
+.prom_img{
+    display: block;
+    background-position: center center;
+    height: 200px;
+}
+/**/
+.prom-position .promo-accessories, .prom-position .promo-ipad, .prom-position .promo-airpods, .prom-position .promo-iphone{
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+}
+.prom-position .promo-accessories{
+    background-image: url("../img/accessories_large.jpg");
+}
+.prom-position .promo-ipad{
+    background-image: url("../img/ipad_pro_large.jpg");
+}
+.prom-position .promo-airpods{
+    background-image: url("../img/airpods_large.jpg");
+}
+.prom-position .promo-iphone{
+    background-image: url("../img/iphone_upgrade_large.jpg");
+}
