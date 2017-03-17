@@ -1,0 +1,246 @@
+/*头部导航开始*/
+
+
+/*头部导航结束*/
+/*less*/
+@cols:20;
+@num1:600px;
+@num2:1000px;
+*{
+  box-sizing: border-box;
+}
+.box{
+  width:100%;height: 44px;background: #000;
+  position: relative;
+}
+.header{
+  &{
+    width:@num1*1px-300px;height: 44px;
+    margin:0 auto;
+    .clear();
+  }
+  &-fuild{
+    width: 100%;
+    .clear();
+  }
+  &>.row{
+    width: 100%;height: 100%;
+    .clear();
+  }
+  &>.row>li{
+    min-width:40px;
+    height: 100%;
+    //margin-right: 10px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 44px;
+    float: left;
+    color: #fff;
+    cursor: pointer;
+    .clear();
+  }
+  &>.row>li a i.iconfont{
+    font-size: 24px;
+  }
+  &>.row>li:nth-child(9){
+    margin-right: 0;
+  }
+  &>.row>li a{
+    color: #fff;
+    display: block;
+  }
+  &>.row>li:hover{
+    color:#b7b7b7;
+  }
+  &>.row>li a:hover{
+    color:#b7b7b7;
+  }
+  &-fuild>.row{
+    width: 1000px;height: 44px;
+    .clear();
+  }
+  &-fuild>.row>li{
+    min-width:40px;
+    height: 100%;
+    //margin-right: 10px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 44px;
+    float: left;
+    color: #fff;
+    cursor: pointer;
+    .clear();
+  }
+  &-fuild>.row>li a i.iconfont{
+    font-size: 24px;
+  }
+  &-fuild>.row>li:nth-child(9){
+    margin-right: 0;
+  }
+  &-fuild>.row>li a{
+    color: #fff;
+    display: block;
+  }
+  &-fuild>.row>li:hover{
+    color:#b7b7b7;
+  }
+  &-fuild>.row>li a:hover{
+    color:#b7b7b7;
+  }
+}
+
+.for(@type,@i:1) when(@i<=@cols){
+  .header>.row>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float:left;
+    position: relative;
+  }
+  .header>.row>.col-@{type}-offset-@{i}{
+    margin-left:@i/@cols*100%;
+  }
+  .header>.row>.col-@{type}-push-@{i}{
+    left:@i/@cols*100%;
+  }
+
+  .header>.row>.col-@{type}-pull-@{i}{
+    left:-@i/@cols*100%;
+  }
+  .header-fuild>.row>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float:left;position: relative;
+  }
+  .for(@type,@i+1);
+}
+
+//小屏
+.for(s);
+.col-l-hide{
+  display: block;
+}
+.col-m-hide{
+  display: block;
+}
+.col-s-hide{
+  display: none;
+}
+//中屏
+@media screen and (min-width: @num1) {
+  .header{
+    width:@num1;
+  }
+  .for(m);
+  .col-s-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: none;
+  }
+}
+//大屏
+@media screen and (min-width: @num2) {
+  .header{
+    width:@num2;
+  }
+  .for(l);
+  .col-s-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: none;
+  }
+}
+
+.clear(){
+  &:before,&:after{
+    content:"";
+    display: block;
+    clear:both;
+  }
+}
+
+.banner{
+  & {
+    width: 100%;
+    height:500px;
+    overflow: hidden;
+  }
+  & img{
+     width: 100%;
+     height: 500px;
+  }
+}
+
+
+
+.imgs{
+  width:100%;
+  height:200px;
+}
+ .imgs .row1 li{
+  height:200px;
+  border:1px solid transparent;
+  float:left;
+  box-sizing: border-box;
+}
+.imgs .row1 li a{
+  display:block;
+  height:100%;
+  width:100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+.imgs .row1 li:nth-child(1) a{
+  background-image:url(../images/11l.jpg);
+}
+.imgs .row1 li:nth-child(2) a{
+  background-image:url(../images/22l.jpg);
+}
+.imgs .row1 li:nth-child(3) a{
+  background-image:url(../images/33l.jpg);
+}
+.imgs .row1 li:nth-child(4) a{
+  background-image:url(../images/44l.jpg);
+}
+
+@media screen and (min-width: 600px) {
+  .imgs .row1 li:nth-child(1) a{
+    background-image:url(../images/11m.jpg);
+  }
+  .imgs .row1 li:nth-child(2) a{
+    background-image:url(../images/22m.jpg);
+  }
+  .imgs .row1 li:nth-child(3) a{
+    background-image:url(../images/33m.jpg);
+  }
+  .imgs .row1 li:nth-child(4) a{
+    background-image:url(../images/44m.jpg);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .imgs .row1 li:nth-child(1) a{
+    background-image:url(../images/11.jpg);
+  }
+  .imgs .row1 li:nth-child(2) a{
+    background-image:url(../images/22.jpg);
+  }
+  .imgs .row1 li:nth-child(3) a{
+    background-image:url(../images/33.jpg);
+  }
+  .imgs .row1 li:nth-child(4) a{
+    background-image:url(../images/44.jpg);
+  }
+}
+
+.esp{
+   width: 980px;
+  height:50px;margin:0 auto;color:#999;border-bottom: 1px solid #999;
+}
+.esp span{line-height: 50px}
+
