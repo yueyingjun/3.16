@@ -1,0 +1,156 @@
+@cols:9;
+@num1:768px;
+@num2:1048px;
+
+/*广告*/
+.gg{
+  width:100%;
+  height: 40px;
+  background: #444;
+}
+.gg1{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.gg1 span{
+  float: right;
+  text-align: center;
+  line-height: 40px;
+  color: #a8a8aa;
+  font-size: 12px;
+  font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media only screen and (min-width: @num2) {
+  .gg1{
+    width: 976px;
+  }
+}
+/*栏目*/
+
+//小屏
+.lm{
+  width:100%;
+  height: 48px;
+  background: rgba(0,0,0,0.8);
+}
+.lm1{
+  width:100%;
+  height: 48px;margin: auto;
+  font-size: 40px;text-align: center;line-height: 48px;
+}
+.lm1 .aa{
+  font-size: 24px;line-height: 35px;
+}
+.for(@type,@i:1) when(@i<=@cols) {
+  .lm .lm1 .col-@{type}-@{i} {
+    width: @i/@cols*100%;
+    float: left;
+  }
+  .for(@type,@i:@i+1);
+}
+.for(s);
+  .col-m-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: block;
+  }
+  .col-s-hide{
+    display: none;
+  }
+
+  //中屏
+  @media only screen and (min-width: @num1) {
+    .lm1{
+      width:95%;
+      height: 44px;
+    }
+    .for(m);
+    .col-s-hide{
+      display: block;
+    }
+    .col-l-hide{
+      display: block;
+    }
+    .col-m-hide{
+      display: none;
+    }
+  }
+
+
+  //大屏
+  @media only screen and (min-width: @num2) {
+    .lm1 {
+      width: 1000px;
+      height: 44px;
+    }
+
+    .for(l);
+    .col-s-hide {
+      display: block;
+    }
+
+    .col-m-hide {
+      display: block;
+    }
+
+    .col-l-hide {
+      display: none;
+    }
+  }
+
+//banner
+.banner{
+  width: 100%;
+  height: 420px;
+}
+.banner img{
+  width:100%;
+  height: 100%;
+}
+
+//产品展示
+
+//小屏
+.zs{
+  width:100%;
+  height:200px;
+}
+.zs .img{
+  width:100%;
+  height:200px;
+  float: left;
+  background-position: center center;
+  background-size: 736px 200px;
+  background-repeat: no-repeat;
+}
+.zs .img1{
+  background-image: url("../img/1.jpg");
+}
+.zs .img2{
+  background-image: url("../img/2.jpg");
+}
+.zs .img3{
+  background-image: url("../img/3.jpg");
+}
+.zs .img4{
+  background-image: url("../img/4.jpg");
+}
+//中屏
+@media only screen and (min-width: 735px) {
+  .zs .img{
+    width:50%;
+    background-size: 640px 200px;
+  }
+}
+//大屏
+@media only screen and (min-width: 1068px) {
+  .zs .img{
+    width:25%;
+    background-size: 100% 200px;
+  }
+}
+
+
+
