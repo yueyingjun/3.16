@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>苹果官网</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+    /*广告开始*/
+     .add{
+        width:100%;height:40px;
+        border-top:1px solid #c2c2c2;
+        background: #444444;
+    }
+    .add .inner{
+        width:980px;
+        height:100%;
+        position:relative;
+        margin:auto;
+    }
+    .add .inner span{
+        position:absolute;right:0;
+        line-height:40px;
+        font-size:12px;
+        color:#a8a8aa;
+    }
+    /*banner开始*/
+    /*导航开始*/
+    .out_nav{
+        height:44px;
+        background: #333333;
+    }
+    .nav{
+        height:44px;
+        width:1070px;
+        /*background: red;*/
+        margin:auto;
+        line-height:44px;
+    }
+    .nav a{
+        color:#ffffff;
+        display: block;
+        text-align: center;
+
+    }
+
+    /*导航结束*/
+    .banner{
+
+    }
+    /*banner结束*/
+    /*广告结束*/
+    /*推荐开始*/
+    .hot{
+        width:100%;
+    }
+    .hot .row div{
+        height:200px;
+        width:25%;
+        float:left;
+    }
+    .hot .row div:nth-child(1){
+        background-image:url(img/accessories_xlarge.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+
+    }
+    .hot .row div:nth-child(2){
+        background-image:url(img/airpods_xlarge.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+
+    }
+    .hot .row div:nth-child(3){
+        background-image:url(img/ipad_pro_xlarge.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+
+    }
+    .hot .row div:nth-child(4){
+        background-image:url(img/iphone_upgrade_xlarge.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+
+    }
+    /*推荐结束*/
+    /*warn开始*/
+    .warn{
+        width:980px;
+        height:49px;
+        margin:auto;
+        border-bottom:1px solid #d6d6d6;
+        line-height:49px;
+        font-size:12px;
+        color:#888888;
+    }
+    /*warn结束*/
+    /*服务开始*/
+    .service{
+        width:980px;
+        height:302px;
+        border-top:1px solid #d6d6d6;
+        border-bottom:1px solid #d6d6d6;
+        margin:auto;
+        font-size:11px;
+        padding-top:11px;
+        position:relative;
+    }
+    .service div[class*=column]{
+        width:20%;
+        height:auto;
+        float:left;
+    }
+    .service div[class*=column] dt,.service div[class*=column] dd{
+        line-height:22px;
+    }
+    .service div[class*=column] dt{
+        color:#333333;
+    }
+    .service div[class*=column] dd a{
+        color:#555555;
+    }
+    .service p{
+        height:30px;
+        line-height:30px;
+        color:#888888;
+        position:absolute;
+        bottom:0;
+    }
+    /*服务结束*/
+    /*foot开始*/
+    .foot{
+        width:980px;
+        margin:auto;
+        heihgt:auto;
+        padding-top:4px;
+        font-size:12px;
+        color:#999999;
+        position:relative;
+    }
+    .foot .foot_nav{
+        overflow: hidden;
+    }
+    .foot .foot_nav,.copyright{
+        line-height:24px;
+    }
+    .foot .foot_nav p,.foot .foot_nav ul,.foot .foot_nav china{
+        float:left;
+    }
+    .foot a{
+        color:#555555;
+    }
+    .foot .foot_nav ul{
+        margin-left:22px;
+    }
+    .foot .foot_nav ul li{
+        float:left;
+        padding:0px 12px;
+    }
+    .foot .foot_nav .china{
+        position:absolute;
+        right:0;
+    }
+    .foot .foot_nav .china img{
+        vertical-align: middle;
+    }
+    .foot .foot_nav .china img span{
+        vertical-align: middle;
+    }
+    /*foot结束*/
+</style>
+<body>
+    <!--广告开始-->
+    <div class="add">
+        <div class="inner">
+            <span>&lt;广告&gt;</span>
+        </div>
+    </div>
+    <!--广告结束-->
+    <!--导航开始-->
+    <div class="out_nav">
+        <div class="nav">
+            <div class="container">
+                <ul class="row">
+                    <li class="col-l-1"><a href=""><i class="iconfont icon-pingguo1
+        "></i></a></li>
+                    <li class="col-l-1"><a href="">Mac</a></li>
+                    <li class="col-l-1"><a href="">ipad</a></li>
+                    <li class="col-l-1"><a href="">iphone</a></li>
+                    <li class="col-l-1"><a href="">Watch</a></li>
+                    <li class="col-l-1"><a href="">Music</a></li>
+                    <li class="col-l-1"><a href="">技术支持</a></li>
+                    <li class="col-l-1"><a href=""><i class="iconfont icon-sou
+        "></i></a></li>
+                    <li class="col-l-1"><a href=""><i class="iconfont icon-gouwudai
+
+        "></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--导航结束-->
+    <!--轮播开始-->
+    <div class="banner container-fluid">
+        <div class="row">
+            <img src="img/watch_alt_large.jpg" alt="" class="col-l-12 col-m-12 col-s-12">
+        </div>
+    </div>
+    <!--轮播结束-->
+    <!--推荐开始-->
+    <div class="container-fluid hot">
+        <div class="row">
+            <div class="col-l-3 col-m-6 col-s-12"></div>
+            <div class="col-l-3 col-m-6 col-s-12"></div>
+            <div class="col-l-3 col-m-6 col-s-12"></div>
+            <div class="col-l-3 col-m-6 col-s-12"></div>
+        </div>
+    </div>
+    <!--推荐结束-->
+    <!--warn开始-->
+    <div class="warn">双镜头摄像头仅于 iPhone 7 Plus 提供。亮黑色外观仅于 128GB 及以上存储容量的机型提供。</div>
+    <!--warn结束-->
+    <!--服务开始-->
+    <div class="service">
+        <div class="column1">
+            <dl>
+                <dt>选购及了解</dt>
+                <dd><a href="">Mac</a></dd>
+                <dd><a href="">ipad</a></dd>
+                <dd><a href="">iPhone</a></dd>
+                <dd><a href="">Watch</a></dd>
+                <dd><a href="">Music</a></dd>
+                <dd><a href="">itunes</a></dd>
+                <dd><a href="">ipod</a></dd>
+                <dd><a href="">配件</a></dd>
+                <dd><a href="">App store充值卡</a></dd>
+            </dl>
+        </div>
+        <div class="column2">
+            <dl>
+                <dt>Apple store</dt>
+                <dd><a href="">查找零售店</a></dd>
+                <dd><a href="">天才吧</a></dd>
+                <dd><a href="">讲座和学习</a></dd>
+                <dd><a href="">青少年活动</a></dd>
+                <dd><a href="">Apple store App</a></dd>
+                <dd><a href="">翻新和优惠</a></dd>
+                <dd><a href="">分期付款</a></dd>
+                <dd><a href="">重复使用和循环利用</a></dd>
+                <dd><a href="">订单状态</a></dd>
+                <dd><a href="">选购帮助</a></dd>
+            </dl>
+        </div>
+        <div class="column3">
+            <dl>
+                <dt>教育应用</dt>
+                <dd><a href="">Apple与教育</a></dd>
+                <dd><a href="">高校师生选购</a></dd>
+            </dl>
+            <dl>
+                <dt>商务应用</dt>
+                <dd><a href="">Apple与商务</a></dd>
+                <dd><a href="">商务选购</a></dd>
+            </dl>
+        </div>
+        <div class="column4">
+            <dl>
+                <dt>账户</dt>
+                <dd><a href="">管理你的Aopple Id</a></dd>
+                <dd><a href="">Store账户</a> </dd>
+                <dd><a href="">iCloud.com</a></dd>
+            </dl>
+            <dl>
+                <dt>Apple 价值观</dt>
+                <dd><a href="">辅助功能</a></dd>
+                <dd><a href="">环境责任</a></dd>
+                <dd><a href="">隐私</a></dd>
+                <dd><a href="">供应商责任</a></dd>
+
+            </dl>
+        </div>
+        <div class="column5">
+            <dl>
+                <dt>关于 Apple</dt>
+                <dd><a href="">Apple 资讯</a></dd>
+                <dd><a href="">工作机会</a></dd>
+                <dd><a href="">媒体资讯</a></dd>
+                <dd><a href="">活动</a></dd>
+                <dd><a href="">联系 Apple</a></dd>
+
+            </dl>
+        </div>
+        <p>更多选购方式：前往 <a href="">Apple Store 零售店</a>，
+            致电 400-666-8800 或查找在你附近的<a href="">授权经销商</a>。</p>
+    </div>
+    <!--服务结束-->
+    <!--foot开始-->
+    <div class="foot">
+        <div class="foot_nav">
+            <p>Copyright © 2017 Apple Inc.保留所有权利。</p>
+            <ul>
+                <li><a href="">隐私政策</a></li>
+                <li>|</li>
+                <li><a href="">使用条款</a></li>
+                <li>|</li>
+                <li><a href="">销售政策</a></li>
+                <li>|</li>
+                <li><a href="">法律信息</a></li>
+                <li>|</li>
+                <li><a href="">网站地图</a></li>
+            </ul>
+            <div class="china">
+                <img src="img/16.png" alt=""> 中国
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="">京公安网安备 11010502008968 京ICP备10214630</a>
+        </div>
+    </div>
+    <!--foot结束-->
+</body>
+</html>
