@@ -84,11 +84,11 @@
   }
 }
 /*顶部导航 end*/
-/*banner start*/
 .banner {
   height: 498px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .banner .imgbox {
   width: 100%;
@@ -98,8 +98,18 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  left: 0;
+  left: 100%;
   top: 0;
+}
+.banner .imgbox > li:nth-child(1) {
+  left: 0;
+  background: #0a0a0a;
+}
+.banner .imgbox > li:nth-child(2) {
+  background: #f2f2f2;
+}
+.banner .imgbox > li:nth-child(3) {
+  background: #FFF;
 }
 .banner .imgbox > li a {
   display: block;
@@ -107,12 +117,6 @@
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-}
-.banner .imgbox > li {
-  opacity: 0;
-}
-.banner .imgbox > li:nth-child(2) {
-  opacity: 1;
 }
 .banner .imgbox > li:nth-child(1) a {
   -moz-background-size: auto 100%;
@@ -132,30 +136,34 @@
 }
 .banner .imgbox > li:nth-child(3) a {
   background-position: center bottom;
-  -moz-background-size: auto 100%;
-  -ms-background-size: auto 100%;
-  -webkit-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
+  background-size: contain;
   background-image: url(../images/gallery/macbookpro_portrait_small.jpg);
 }
 @media screen and (min-width: 512px) {
+  .banner {
+    height: 469px;
+  }
   .banner .imgbox > li:nth-child(1) a {
     background-image: url(../images/gallery/iphone_alt_medium.jpg);
   }
   .banner .imgbox > li:nth-child(2) a {
+    -moz-background-size: auto 100%;
+    -ms-background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
     background-image: url(../images/gallery/watch_alt_medium.jpg);
   }
   .banner .imgbox > li:nth-child(3) a {
-    -moz-background-size: 100%;
-    -ms-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    -moz-background-size: auto 100%;
+    -ms-background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
     background-image: url(../images/gallery/macbookpro_medium.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 735px) {
   .banner .imgbox > li:nth-child(1) a {
     background-image: url(../images/gallery/iphone_alt_large.jpg);
   }
@@ -166,25 +174,80 @@
     background-image: url(../images/gallery/macbookpro_large.jpg);
   }
 }
+/*底部按钮 start*/
 .banner .btnbox {
   width: 180px;
-  height: 2px;
+  height: 20px;
   position: absolute;
   left: 50%;
   bottom: 32px;
+  z-index: 200;
   margin-left: -90px;
 }
 .banner .btnbox li {
   width: 50px;
+  height: 100%;
+  line-height: 20px;
   margin: 0 5px;
   float: left;
 }
-.banner .btnbox li span {
+.banner .btnbox li > span {
   display: inline-block;
-  height: 100%;
+  height: 2px;
   width: 100%;
-  background: #808080;
+  line-height: 2px;
+  vertical-align: middle;
+  background: rgba(128, 128, 128, 0.3);
+  position: relative;
+  overflow: hidden;
 }
+.banner .btnbox li > span > span {
+  background: #808080;
+  width: 0;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/*底部按钮 end*/
+/*左右按钮 start*/
+.banner .btns {
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  top: 0;
+  z-index: 201;
+}
+.banner .lbtnbox {
+  left: 0;
+}
+.banner .rbtnbox {
+  right: 0;
+}
+.banner .btns div {
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.35s;
+  border-radius: 50%;
+  font-size: 24px;
+  font-family: Simsun;
+  font-weight: 600;
+  color: #666;
+  position: absolute;
+  left: 50%;
+  margin-left: -32px;
+  top: 50%;
+  margin-top: -32px;
+  opacity: 0;
+}
+.banner .btns:hover div {
+  opacity: 1;
+}
+/*左右按钮 end*/
 /*banner end*/
 /*商品推销 start*/
 .promos {
