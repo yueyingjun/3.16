@@ -23,7 +23,6 @@
   background: #000;
   position: relative;
   left: 0;
-  top: 40px;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -308,6 +307,18 @@
   }
 }
 /*页尾*/
+footer {
+    width: 100%;
+    background: #F2F2F2;
+}
+
+.info{
+    width: 90%;
+    margin: auto;
+    line-height: 50px;
+    font-size: 11px;
+    border-bottom: 1px solid #ccc;
+}
 /*end*/
 .container {
   width: 100%;
