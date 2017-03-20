@@ -1,0 +1,112 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color:#ccc
+}
+ul,li{
+	list-style: none;
+}
+.header{
+	width: 100%;
+	height: 40px;background: #ddd;
+}
+.bannerbox{
+	width: 100%;
+	overflow: hidden;
+	background: red;
+}
+.top_nav{
+	width: 100%;
+	height: 48px;
+	background: #333333;
+}
+.top_nav>.center{
+	width: 70%;
+	background: #333;
+	margin: 0 auto;
+	height: 100%;
+}
+.banner{
+	width: 100%;
+	height: 400px;
+}
+.divbox{
+	padding: 0;
+	text-align: center;
+}
+.top_nav>.box-fluid{
+	height: 100%;
+	overflow:visible
+}
+ul.divbox{
+	position: relative;
+	margin: 0;
+	height: 100%;
+	line-height: 48px;
+}
+.divbox>li:hover{
+	opacity: .65
+}
+.myul{
+	display: none;
+	position: absolute;
+	left: 0;
+	top:100%;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	z-index: 200;
+	background: #333;
+}
+.myul>li{
+	text-align: left;
+	padding-left: 50px;
+}
+
+/*四个方块*/
+.xianzai>div{
+	height: 200px;
+}
+.xianzai>div:nth-child(1){
+	background-image: url(../images/1.jpg);
+	background-position: center center;
+}
+.xianzai>div:nth-child(2){
+	background-image: url(../images/2.jpg);
+	background-position: center center;
+}
+.xianzai>div:nth-child(3){
+	background-image: url(../images/3.jpg);
+	background-position: center center;
+}
+.xianzai>div:nth-child(4){
+	background-image: url(../images/4.jpg);
+	background-position: center center;
+}
+/*下边内容*/
+.neirong>li:nth-child(1){
+	font-size: 11px;
+	line-height: 1.27273;
+	font-weight: 600;
+	letter-spacing: .005em;
+	color:#333;
+	margin-bottom:6px;
+	text-align: left;
+	
+}
+.neirong{
+	padding: 0;
+	text-align: left;
+}
+.padd{
+	padding-top: 30px;
+}
+.neirong>li{
+	font-size: 11px;
+	line-height: 14px;
+	letter-spacing: .005em;
+	color:#333;
+	margin-bottom: 6px;
+	cursor: pointer;
+}
