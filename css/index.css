@@ -210,7 +210,6 @@
   left: 0;
   top: 0;
 }
-/*底部按钮 end*/
 /*左右按钮 start*/
 .banner .btns {
   height: 100%;
@@ -247,8 +246,6 @@
 .banner .btns:hover div {
   opacity: 1;
 }
-/*左右按钮 end*/
-/*banner end*/
 /*商品推销 start*/
 .promos {
   width: 100%;
@@ -310,7 +307,8 @@
     background-image: url(../images/promos/airpods_large.jpg);
   }
 }
-/*商品推销 end*/
+/*页尾*/
+/*end*/
 .container {
   width: 100%;
 }
