@@ -1,0 +1,104 @@
+/*header {*/
+    /*width: 100%;*/
+    /*height: 44px;*/
+    /*background: #333333;*/
+/*}*/
+/*.header {*/
+    /*width: 990px;*/
+    /*height: 100%;*/
+    /*margin: 0 auto;*/
+/*}*/
+/*.header div {*/
+    /*float: left;*/
+    /*width: 110px;*/
+    /*line-height: 44px;*/
+    /*text-align: center;*/
+    /*font-size: 14px;*/
+    /*color: #fff;*/
+    /*font-weight: bold;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.header div:hover {*/
+    /*color: #B2B2B2;*/
+/*}*/
+/*底部*/
+.bottombox{
+    width:100%;
+    height:auto;
+    background: #F2F2F2;
+    border-top:1px solid #fff;
+}
+/*.bottoms{*/
+    /*width:1000px;*/
+    /*height:auto;*/
+    /*margin:0 auto;*/
+/*}*/
+.bottoms_top{
+    width:100%;
+    border-bottom: 1px solid #D6D6D6;
+    line-height: 50px;
+}
+.bottoms_bottom{
+    width:100%;
+    height:260px;
+    color:#8891AF;
+}
+.bottoms_bottom ul{
+    margin-top:20px;
+    width:20%;
+    height:auto;
+    float:left;
+    text-align: center;
+}
+.bottoms_bottom ul span{
+    font-weight: bold;
+}
+.bottoms_bottom ul li{
+    margin-top:5px;
+    cursor: pointer;
+}
+/*banner*/
+.bannerbox{
+    width:100%;
+    height: 520px;
+    background: #000;
+}
+.banner{
+    /*width:1000px;*/
+    height:100%;
+    margin:0 auto;
+    position:relative;
+}
+.picbox{
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.picbox li{
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+.picbox li img{
+    /*width:100%;*/
+    height:520px;
+}
+.picbox .first{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
