@@ -1,0 +1,642 @@
+@import url(base.css);
+/*顶部广告*/
+.dbgg {
+  background: #444;
+  width: 100%;
+  height: 40px;
+}
+.dbggli {
+  width: 976px;
+  color: #a8a8aa;
+  font-size: 12px;
+  line-height: 40px;
+  text-overflow: ellipsis;
+  text-align: right;
+  margin: 0 auto;
+}
+/*顶部广告*/
+@media screen and (max-width: 1023px) {
+  /*顶部广告*/
+  .dbggli {
+    margin-left: auto;
+    width: auto;
+    padding: 0 25px;
+  }
+  /*顶部广告结束*/
+}
+@media  screen and (min-width: 1068px) {
+	header{
+		width: 100%;
+		height:44px;
+	    background: black;
+	}
+	header .list{
+	    width: 1000px;
+	    height: auto;
+	    margin: 0 auto;
+	    text-align: justify;
+	}
+	header .list::after{
+		content: "";
+		width: 100%;
+		text-align: justify;
+		display: inline-block;
+	}
+	header .list > a{
+		display: inline-block;
+		line-height: 44px;
+		padding: 0 10px;
+		color: #fff;
+	}
+	header .list1{
+		display: none;
+	}
+	header .list1 > .jishu{
+		display: inline-block;
+	}
+	.banner{
+		width:100%;
+		height:540px;
+		margin:0 auto;
+		background: blue;
+		position:relative;
+	}
+	.banner>a{
+		width:100%;
+		height:100%;
+		margin:0 auto;
+		display: block;
+		background: black;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.banner>.banner1>h1{
+		color:white;
+		font-size:26px;
+		font-weight:bold;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.banner>.banner1{
+		background:#0A0A0A;
+		background-image:url("../img/iphone_alt_large.jpg");
+		background-position:center center;
+		background-size:auto 110%;
+		background-repeat:no-repeat;
+		z-index:1;
+	}
+	.banner>.banner2{
+		background:#F3F3F3;
+		background-image:url("../img/macbookpro_large.jpg");
+		background-position:center bottom;
+		background-size:auto 110%;
+		background-repeat:no-repeat;	
+	}
+	.banner>.banner3{
+		background:#FFFFFF;
+		background-image:url("../watch_alt_large.jpg");
+		background-position:center bottom;
+		background-size:auto 80%;
+		background-repeat:no-repeat;
+	}
+	.fourbox{
+		width: 100%;
+		height: 280px;
+		margin: 0 auto;
+	}
+	.fourbox>a{
+		width: 25%;
+		height: 100%;
+		float: left;
+		display:block;
+		background-position: center center;
+		box-sizing:border-box; 
+		border: 1px solid#fff;
+	}
+	.fourbox>.fourbox1{
+		width: 25%;
+		background-image:url("../img/accessories_large.jpg");
+		background-size:auto 100%;
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+	.fourbox>.fourbox2{
+		width: 25%;
+		background-image:url("../img/airpods_large.jpg");
+		background-position:center;
+		background-size:auto 100%;
+		background-repeat:no-repeat;	
+	}
+	.fourbox>.fourbox3{
+		width: 25%;
+		background-image:url("../img/ipad_pro_large.jpg");
+		background-position:center;
+		background-size:auto 100%;
+		background-repeat:no-repeat;
+	}
+	.fourbox>.fourbox4{
+		width: 25%;
+		background-image:url("../img/iphone_upgrade_large.jpg");
+		background-position:center;
+		background-size:auto 100%;
+		background-repeat:no-repeat;
+	}
+	.word{
+		height: 300px;
+		width: 100%;
+	}
+	.word .words{
+		width: 1024px;
+		height:100%;
+		margin: 0 auto;
+	}
+	.word .words>.wordstop{
+		width:100%;
+		font-size:12px;
+		padding-top:17px;
+		padding-bottom:11px;
+		margin:0 auto;
+		color:#323232;
+	}
+	.word .words>.dazhong1{
+		border-top: 1px solid #d6d6d6;
+		padding-top: 10px;
+	}
+	.word .words>.dazhong1>li{
+		width: 20%;
+		height: auto;
+		float: left;
+	}
+	.word .words>.dazhong1>li>a{
+		display: block;
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	.word .words>.dazhong1>li>h4~h4{
+		margin-top: 15px;
+	}
+	.word .words>.xiaoping{
+		display: none;
+	}
+	.bottom{
+		width:100%;
+		height:200px;
+		margin:0 auto;
+		color:#888888;
+		font-size:12px;	
+	}
+	.bottom>.wenzi{	
+		width: 980px;
+		margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom:10px;
+		border-bottom:1px solid #D6D6D6;
+	}
+	.bottom>.wenzi>a{
+		color: blue;
+	}
+	.bottom>.wenzi>a:hover{
+		text-decoration: underline;
+	}
+	.bottom>.box{
+		width:980px;
+		height:auto;
+		overflow:hidden;
+		margin-top:6px;
+		margin: 0 auto;
+		padding-top:10px; 
+	}
+	.bottom>.box>.boxright{
+		float:right;
+	}
+	.bottom>.box>.boxleft{
+		float:left;
+	}
+	.bottom>.box>.boxzhong{
+		float:left;
+		margin-left:30px;
+		color:#555555;
+	}
+	.bottom.box>.boxzhong:hover{
+		text-decoration:underline;
+	}
+	.bottom>.boxunder{
+		width: 980px;
+		height: auto;
+		margin: 0 auto;
+	}
+	.bottom>.boxunder:hover{
+		text-decoration:underline;
+	} 
+}
+@media screen and (min-width: 735px) and (max-width: 1068px) {
+	header{
+		width: 100%;
+		height: 44px;
+		background: black;
+	}
+
+	header .list{
+	    width: 100%;
+	    height: 44px;
+	    margin: 0 auto;
+	    text-align: justify;
+	    float: left;	
+	}
+	header .list::after{
+		content: "";
+		width: 100%;
+		text-align: justify;
+		display: inline-block;
+	
+	}
+	header .list > a{
+		display: inline-block;
+		line-height: 44px;
+		padding:  0 10px;
+		color: #fff;
+	}
+	header .list1{
+		display: none;
+	}
+	
+	.banner{
+		width:100%;
+		height:540px;
+		margin:0 auto;
+		background: blue;
+		position:relative;
+	}
+	.banner>a{
+		width:100%;
+		height:100%;
+		margin:0 auto;
+		display: block;
+		background: black;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.banner>.banner1>h1{
+		color:white;
+		font-size:26px;
+		font-weight:bold;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.banner>.banner1{
+		background:#0A0A0A;
+		background-image:url("../img/iphone_alt_large.jpg");
+		background-position:center center;
+		background-size:auto 110%;
+		background-repeat:no-repeat;
+		z-index:1;
+	}
+	
+	.banner>.banner2{
+		background:#0A0A0A;
+		background-image:url("../img/macbookpro_large.jpg");
+		background-position:center center;
+		background-size:auto 110%;
+		background-repeat:no-repeat;
+	}
+	.banner>.banner3{
+		background:#0A0A0A;
+		background-image:url("../img/watch_alt_large.jpg");
+		background-position:center center;
+		background-size:auto 110%;
+		background-repeat:no-repeat;	
+	}
+
+	.fourbox{
+		width: 100%;
+		height: 280px;
+		margin: 0 auto;
+	}
+	.fourbox>a{
+		width: 100%;
+		height: 100%;
+		float: left;
+		display:block;
+		background-position: center center;
+		box-sizing:border-box; 
+		border: 1px solid#fff;
+	}
+	.fourbox>.fourbox1{
+		width: 50%;
+		background-image:url("../img/accessories_large.jpg");
+		background-size:auto 110%;
+		background-repeat:no-repeat;
+	}
+	.fourbox>.fourbox2{
+		width: 50%;
+		background-image:url("../img/airpods_large.jpg");
+		background-position:center bottom;
+		background-size:auto 100%;	
+		background-repeat:no-repeat;
+	}
+	.fourbox>.fourbox3{
+		width: 50%;
+		background-image:url("../img/ipad_pro_large.jpg");
+		background-position:center bottom;
+		background-size:auto 100%;
+		background-repeat:no-repeat;
+	}
+	.fourbox>.fourbox4{
+		width: 50%;
+		background-image:url("../img/iphone_upgrade_large.jpg");
+		background-position:center bottom;
+		background-size:auto 100%;
+		background-repeat:no-repeat;
+	}
+	.word{
+		width: 100%;
+		height: 295px;
+	}
+	.word .words{
+		width: 735px;
+		height:50px;
+		margin: 0 auto;
+	}
+	.word .words>.wordstop{
+		width:100%;
+		font-size:12px;
+		padding-top:17px;
+		padding-bottom:11px;
+		margin:0 auto;
+		color:#323232;
+	}
+	.word .words>.dazhong1{
+		border-top: 1px solid #d6d6d6;
+		padding-top: 10px;
+	}
+	.word .words>.dazhong1>li{
+		width: 20%;
+		height: auto;
+		float: left;
+	}
+	.word .words>.dazhong1>li>a{
+		display: block;
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	.word .words>.dazhong1>li>h4~h4{
+		margin-top: 15px;
+	}
+	.word .words>.xiaoping{
+		display: none;
+	}
+	.bottom{
+		width:100%;
+		margin:0 auto;
+		padding-bottom:21px;
+		color:#888888;
+		font-size:12px;	
+	}
+	.bottom>.wenzi{	
+		height: 100%;
+		margin: 0 auto;
+		padding-top: 300px;
+		padding-bottom:6px;
+		border-bottom:1px solid #D6D6D6;
+	}
+	.bottom>.wenzi>a{
+		color: blue;
+	}
+	.bottom>.wenzi>a:hover{
+		text-decoration: underline;
+	}
+	.bottom>.box{
+		width:100%;
+		height:auto;
+		overflow:hidden;
+		margin-top:6px;
+		margin: 0 auto;
+	}
+	.bottom>.box>.boxright{
+		float:right;
+	}
+	.bottom>.box>.boxleft{
+		float:left;
+	}
+	.bottom>.box>.boxzhong{
+		float:left;
+		margin-left:30px;
+		color:#555555;
+	}
+	.bottom.box>.boxzhong:hover{
+		text-decoration:underline;
+	}
+	.bottom>.boxunder{
+		width: 980px;
+		height: auto;
+		margin: 0 auto;
+	}
+	.bottom>.boxunder:hover{
+		text-decoration:underline;
+	}
+}
+@media screen and (max-width: 735px) {
+	header{
+		width: 100%;
+		height: 44px;
+		background: black;
+	}
+
+	header .list1{
+	    width: 100%;
+	    height: 44px;
+	    margin: 0 auto;
+	    text-align: justify;
+	    float: left;	
+	}
+	header .list1::after{
+		content: "";
+		width: 100%;
+		text-align: justify;
+		display: inline-block;
+	
+	}
+	header .list1 > a{
+		display: inline-block;
+		line-height: 44px;
+		padding:  0 10px;
+		color: #fff;
+	}
+	header .list{
+		display: none;
+	}
+	.banner{
+		width:100%;
+		height:540px;
+		margin:0 auto;
+		background: blue;
+		position:relative;
+	}
+	.banner>a{
+		width:100%;
+		height:100%;
+		margin:0 auto;
+		display: block;
+		background: black;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.banner>.banner1>h1{
+		color:white;
+		font-size:26px;
+		font-weight:bold;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.banner>.banner1{
+		background:#0A0A0A;
+		background-image:url("../img/iphone_alt_large.jpg");
+		background-position:center center;
+		background-size:auto 110%;
+		background-repeat:no-repeat;
+		z-index:1;
+	}
+	.banner>.banner2{
+		background:#0A0A0A;
+		background-image:url("../img/macbookpro_large.jpg");
+		background-position:center center;
+		background-size:auto 110%;
+		background-repeat:no-repeat;	
+	}
+	.banner>.banner3{
+		background:#0A0A0A;
+		background-image:url("../watch_alt_large.jpg");
+		background-position:center center;
+		background-size:auto 110%;
+		background-repeat:no-repeat;
+	}
+	.fourbox{
+		width: 100%;
+		height:400px;
+		margin: 0 auto;
+	}
+	.fourbox>a{
+		width: 100%;
+		height: 100%;
+		float: left;
+		display:block;
+		background-position: center center;
+		box-sizing:border-box; 
+		border: 1px solid#fff;
+	}
+	.fourbox>.fourbox1{
+		width: 100%;
+		background-image:url("../img/accessories_large.jpg");
+		background-size:auto 110%;
+		background-repeat:no-repeat;
+	}
+	.fourbox>.fourbox2{
+		width: 100%;
+		background-image:url("../img/airpods_large.jpg");
+		background-position:center bottom;
+		background-size:auto 100%;	
+		background-repeat:no-repeat;
+	}
+	.fourbox>.fourbox3{
+		width: 100%;
+		background-image:url("../img/ipad_pro_large.jpg");
+		background-position:center bottom;
+		background-size:auto 100%;
+		background-repeat:no-repeat;
+	}
+	.fourbox>.fourbox4{
+		width: 100%;
+		background-image:url("../img/iphone_upgrade_large.jpg");
+		background-position:center bottom;
+		background-size:auto 100%;
+		background-repeat:no-repeat;
+	}
+	.word .words>.wordstop{
+		width:100%;
+		font-size:12px;
+		padding-top:17px;
+		padding-bottom:11px;
+		margin:0 auto;
+		color:#323232;
+	}
+	.word .words>.dazhong1{
+		display: none;
+	}
+	.word .words>.xiaoping{
+		float:left;
+		width:100%;
+	}	
+	.word .words>.xiaoping{
+		border-top: 1px solid #d6d6d6;
+		padding-top: 10px;
+	}
+	.word .words>.xiaoping>li{
+		font-size:14px;
+		color:#333333;
+		padding:10px 0;	
+		height:18px;
+		padding:10px 0;
+		border-bottom:1px solid #D6D6D6;
+	} 
+	.word .words>.xiaoping>li>h4>.xiaopingleft{
+		float: left;
+	} 
+	.word .words>.xiaoping>li>h4>.xiaopingright{
+		float: right;
+	}
+	.bottom{
+		width:100%;
+		height:54px;
+		margin:0 auto;
+		padding-top:34px;
+		padding-bottom:21px;
+		color:#888888;
+		font-size:12px;	
+	}
+	.bottom>.wenzi{	
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 6px;
+		padding-bottom:6px;
+		border-bottom:1px solid #D6D6D6;
+	}
+	.bottom>.wenzi>a{
+		color: blue;
+	}
+	.bottom>.wenzi>a:hover{
+		text-decoration: underline;
+	}
+	.bottom>.box{
+		width:100%;
+		height:auto;
+		overflow:hidden;
+		margin-top:6px;
+		margin: 0 auto;
+	}
+	.bottom>.box>.boxright{
+		float:right;
+	}
+	.bottom>.box>.boxleft{
+		float:left;
+	}
+	.bottom>.box>.boxzhong{
+		float:left;
+		margin-left:30px;
+		color:#555555;
+	}
+	.bottom.box>.boxzhong:hover{
+		text-decoration:underline;
+	}
+	.bottom>.boxunder{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.bottom>.boxunder:hover{
+		text-decoration:underline;
+	} 
+}
+
