@@ -1,0 +1,242 @@
+@col:12;
+@num1:1200px;
+@num2:900px;
+*{
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+.container{
+    &-fluid{
+        width:100%;
+        .clear();
+    }
+    &-fluid>.row{
+        width:100%;
+        .clear();
+    }
+    &{
+        width:600px;
+        .clear();
+    }
+    &>.row{
+        width:100%;
+        .clear();
+    }
+}
+//小屏
+.col-m-hide{
+    display: block;
+}
+.col-l-hide{
+    display: block;
+}
+.col-s-hide{
+    display: none;
+}
+.for(s);
+.col-s-y{
+    height: 800px;
+}
+.col-s-line{
+    border-bottom: 1px solid #A8A8AA;
+    margin-left: 30px;
+    padding: 8px 0;
+}
+//中屏
+@media screen and (min-width:@num2) {
+    .container{
+        width:@num2;
+    }
+    .col-s-hide{
+        display: block;
+    }
+    .col-l-hide{
+        display: block;
+    }
+    .col-m-hide{
+        display: none;
+    }
+    .for(m);
+    .col-m-y{
+        height: 400px;
+    }
+    .col-s-line{
+        border-bottom: none;
+        margin-left: 0;
+        padding: 0;
+    }
+}
+//大屏
+@media screen and (min-width:@num1) {
+    .container{
+        width:@num1;
+    }
+    .col-s-hide{
+        display: block;
+    }
+    .col-m-hide{
+        display: block;
+    }
+    .col-l-hide{
+        display: none;
+    }
+    .for(l);
+    .col-l-y{
+        height: 200px;
+    }
+}
+.clear(){
+    &{
+        &:before,&:after{
+            content: "";
+            display: none;
+            clear: both;
+        }
+    }
+}
+.for(@type,@i:1) when(@i<=@col){
+    .container-fluid>.row>.col-@{type}-@{i}{
+        width:@i/@col*100%;
+        position: relative;
+        float: left;
+    }
+    //margin值
+    .container-fluid>.row>.col-@{type}-offset-@{i}{
+        margin-left: @i/@col*100%;
+    }
+    //定位左偏移
+    .container-fluid>.row>.col-@{type}-push-@{i}{
+        left: @i/@col*100%;
+    }
+    //定位右偏移
+    .container-fluid>.row>.col-@{type}-pull-@{i}{
+        right: @i/@col*100%;
+    }
+    .container>.row>.col-@{type}-@{i}{
+        width:@i/@col*100%;
+        position: relative;
+        float: left;
+    }
+    //margin值
+    .container>.row>.col-@{type}-offset-@{i}{
+        margin-left: @i/@col*100%;
+    }
+    //定位左偏移
+    .container>.row>.col-@{type}-push-@{i}{
+        left: @i/@col*100%;
+    }
+    //定位右偏移
+    .container>.row>.col-@{type}-pull-@{i}{
+        right: @i/@col*100%;
+    }
+    .for(@type,@i:@i+1);
+}
+.container{
+    margin: auto;
+}
+//banner
+.box{
+    width: 100%;
+    height: 495px;
+    background: #F2F2F2;
+    overflow: hidden;
+    position: relative;
+}
+img{
+    width: 100%;
+    min-height: 100%;
+}
+//show页面
+.list{
+    width: 100%;
+}
+.one{
+    height: 200px;
+    overflow: hidden;
+}
+.one img{
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+//头部
+header{
+    width: 100%;
+    height: 40px;
+    background: #444444;
+}
+.header{
+    max-width: 1100px;
+    padding-right: 100px;
+    height: 100%;
+    line-height: 40px;
+    font-size: 10px;
+    color: #A8A8AA;
+    margin: 0 auto;
+    text-align: right;
+}
+//导航栏
+    nav{
+        width: 100%;
+        height: 45px;
+        background: #313131;
+    }
+    ul.row li{
+        font-size: 14px;
+        font-family: "微软雅黑";
+        line-height: 45px;
+        height: 100%;
+        float: left;
+        text-align: center;
+    }
+    ul.row li a{
+        color: #F0F0F0;
+        text-decoration: none;
+    }
+    ul.row li a .iconfont{
+        font-size: 20px;
+    }
+    ul.row li a:hover{
+        color: #A8A8AA;
+    }
+    // 广告
+    .message{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+    }
+    p{
+        max-width: 1200px;
+        height: 100%;
+        margin: auto;
+        color: #A8A8AA;
+        font-size: 10px;
+        font-family: "微软雅黑";
+    }
+    //列表页
+    .menu{
+        width: 900px;
+        height: 240px;
+        padding: 10px 0;
+        border-top: 1px solid #A8A8AA;
+        margin: 0 auto;
+    }
+    .menu .row>ul{
+        height: 100%;
+        width:100%
+    }
+    .menu .row>ul li{
+        height: 8%;
+        width: 100%;
+        font-size: 12px;
+        color: #333333;
+        margin-top: 10px;
+    }
+    .menu .row>ul li a{
+        font-size: 10px;
+        text-decoration: none;
+        color: #555555;
+    }
+    .menu .row>ul li a:hover{
+        text-decoration: underline;
+    }
