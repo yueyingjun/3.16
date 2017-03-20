@@ -1,0 +1,17 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,input,pre{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:0px;
+}
+body{
+    font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+em{
+    font-style: normal;
+}
