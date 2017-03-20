@@ -1,0 +1,176 @@
+@col:12;
+@num1:1200px;
+@num2:900px;
+*{
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+.container{
+    &-fluid{
+        width:100%;
+        .clear();
+    }
+    &-fluid>.row{
+        width:100%;
+        .clear();
+    }
+    &{
+        width:600px;
+        .clear();
+    }
+    &>.row{
+        width:100%;
+        .clear();
+    }
+}
+//小屏
+.col-m-hide{
+    display: block;
+}
+.col-l-hide{
+    display: block;
+}
+.col-s-hide{
+    display: none;
+}
+.for(s);
+//中屏
+@media screen and (min-width:@num2) {
+    .container{
+        width:@num2;
+    }
+    .col-s-hide{
+        display: block;
+    }
+    .col-l-hide{
+        display: block;
+    }
+    .col-m-hide{
+        display: none;
+    }
+    .for(m);
+}
+//大屏
+@media screen and (min-width:@num1) {
+    .container{
+        width:@num1;
+    }
+    .col-s-hide{
+        display: block;
+    }
+    .col-m-hide{
+        display: block;
+    }
+    .col-l-hide{
+        display: none;
+    }
+    .for(l);
+}
+.clear(){
+    &{
+        &:before,&:after{
+            content: "";
+            display: none;
+            clear: both;
+        }
+    }
+}
+.for(@type,@i:1) when(@i<=@col){
+    .container-fluid>.row>.col-@{type}-@{i}{
+        width:@i/@col*100%;
+        position: relative;
+        float: left;
+    }
+    //margin值
+    .container-fluid>.row>.col-@{type}-offset-@{i}{
+        margin-left: @i/@col*100%;
+    }
+    //定位左偏移
+    .container-fluid>.row>.col-@{type}-push-@{i}{
+        left: @i/@col*100%;
+    }
+    //定位右偏移
+    .container-fluid>.row>.col-@{type}-pull-@{i}{
+        right: @i/@col*100%;
+    }
+    .container>.row>.col-@{type}-@{i}{
+        width:@i/@col*100%;
+        position: relative;
+        float: left;
+    }
+    //margin值
+    .container>.row>.col-@{type}-offset-@{i}{
+        margin-left: @i/@col*100%;
+    }
+    //定位左偏移
+    .container>.row>.col-@{type}-push-@{i}{
+        left: @i/@col*100%;
+    }
+    //定位右偏移
+    .container>.row>.col-@{type}-pull-@{i}{
+        right: @i/@col*100%;
+    }
+    .for(@type,@i:@i+1);
+}
+.container{
+    margin: auto;
+}
+//banner
+.box{
+    width: 100%;
+    height: 495px;
+    background: #F2F2F2;
+    overflow: hidden;
+    position: relative;
+}
+img{
+    width: 100%;
+    //height: 100%;
+}
+//show页面
+.list{
+    width: 100%;
+}
+.one{
+    height: 200px;
+    overflow: hidden;
+}
+//头部
+header{
+    width: 100%;
+    height: 40px;
+    background: #444444;
+}
+.header{
+    max-width: 1100px;
+    padding-right: 100px;
+    height: 100%;
+    line-height: 40px;
+    font-size: 10px;
+    color: #A8A8AA;
+    margin: 0 auto;
+    text-align: right;
+}
+//导航栏
+    nav{
+        width: 100%;
+        height: 45px;
+        background: #313131;
+    }
+    ul.row li{
+        font-size: 14px;
+        font-family: "微软雅黑";
+        line-height: 45px;
+        height: 100%;
+        float: left;
+        text-align: center;
+    }
+    ul.row li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    ul.row li a .iconfont{
+        font-size: 24px;
+        font-weight: bold;
+    }
