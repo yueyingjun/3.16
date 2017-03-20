@@ -308,16 +308,58 @@
 }
 /*页尾*/
 footer {
-    width: 100%;
-    background: #F2F2F2;
+  width: 100%;
+  background: #F2F2F2;
 }
-
-.info{
-    width: 90%;
-    margin: auto;
-    line-height: 50px;
-    font-size: 11px;
-    border-bottom: 1px solid #ccc;
+.info {
+  width: 90%;
+  margin: auto;
+  line-height: 50px;
+  font-size: 11px;
+  border-bottom: 1px solid #ccc;
+}
+.directory {
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 18px;
+}
+.directory:after {
+  content: "";
+  display: none;
+  clear: both;
+}
+.directory > div {
+  width: 100%;
+}
+.directory > div:after {
+  content: "";
+  display: none;
+  clear: both;
+}
+.directory ul {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+.title {
+  margin-left: 40px;
+  width: 15% !important;
+}
+.directory h3,
+.directory li {
+  line-height: 38px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.directory h3 {
+  font-weight: 600;
+  margin-left: 15px;
+}
+.directory li {
+  margin-left: 30px;
+  line-height: 15px;
+  margin-bottom: 6px;
 }
 /*end*/
 .container {
