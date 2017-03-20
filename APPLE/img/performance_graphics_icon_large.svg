@@ -1,0 +1,11 @@
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" width="51" height="29" viewBox="0 0 51 29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>Vector Smart Object1</title>
+  <path class="cls-1" d="M47,26V1.352A1.356,1.356,0,0,0,45.642,0H5.363A1.359,1.359,0,0,0,4,1.352V26H0v1.511C0.565,28.441,3.7,29,4.914,29H46.085c1.214,0,4.349-.559,4.915-1.489V26H47ZM6,2H45V26H6V2Z"/>
+</svg>

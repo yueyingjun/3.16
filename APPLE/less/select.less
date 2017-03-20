@@ -1,0 +1,98 @@
+//响应式框架
+@cols:10;
+@num1:750px;
+@num2:450px;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+//小屏
+.container1{
+  &-fluid{
+    width:100%;
+    margin:0 auto;
+    .clear();
+  }
+  &-fluid .row{
+    width:100%;
+    .clear();
+  }
+  &{
+    width:100%;
+    margin:0 auto;
+    .clear();
+  }
+  & .row{
+    width:720px;
+    .clear();
+  }
+}
+.col-l-hide{
+  display:block;
+}
+.col-m-hide{
+  display:block;
+}
+.smallselect{
+  display:block;
+}
+.bigselect{
+  display:none;
+}
+.col-s-hide{
+  display:none;
+}
+.xunhuan(s);
+//大屏
+@media screen and (min-width:@num1){
+  .container1{
+    width:990px;
+  }
+  .col-s-hide{
+    display:block;
+  }
+  .col-m-hide{
+    display:block;
+  }
+  .col-l-hide{
+    display:none;
+  }
+  .bigselect{
+    display:block;
+  }
+  .smallselect{
+    display:none;
+  }
+  .xunhuan(l);
+}
+.xunhuan(@type,@i:1) when (@i<=@cols){
+  .container1>.row1>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float:left;
+    position:relative;
+  }
+  .container1>.row1>.col-@{type}-offset-@{i}{
+    margin-right:@i/@cols*100%;
+  }
+  .container1>.row1>.col-@{type}-push-@{i}{
+    left:@i/@cols*100%;
+  }
+  .container1>.row1>.col-@{type}-pull-@{i}{
+    left:-@i/@cols*100%;
+  }
+  .container1-fluid>.row1>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float:left;
+  }
+  .xunhuan(@type,@i:@i+1);
+}
+.clear(){
+  &{
+    &:before,&:after{
+      content:"";
+      clear:both;
+      display:block;
+    }
+  }
+}
