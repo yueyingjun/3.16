@@ -494,7 +494,7 @@
 .col-off-s-24 {
   margin-left: 100%;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 735px) {
   .col-s-hidden {
     display: block;
   }
@@ -966,7 +966,7 @@
     margin-left: 100%;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .col-l-hidden {
     display: none;
   }
