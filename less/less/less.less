@@ -1,0 +1,28 @@
+.for(@i:0) when(@i<=12){
+    .contant{
+        & .con-l-@{i}{
+            width: @i/12*100%;
+        } 
+    }
+
+    .for(@i:@i+1)
+}
+.for1(@i:0) when(@i<=12){
+    .contant{
+        & .con-s-@{i}{
+        width: @i/12*100%;
+    }
+    }
+    .for1(@i:@i+1)
+}
+.for2(@i:0) when(@i<=12){
+    .contant{
+        .con-m-@{i}{
+            width: @i/12*100%;
+        }   
+    }
+    .for2(@i:@i+1)
+}
+.for();
+.for1();
+.for2();
