@@ -1,0 +1,101 @@
+@cols:12;
+.container{
+  &-fluid{
+    width:100%;
+    .clear();
+    margin:auto;
+  }
+  &-fluid .row{
+    width: 100%;
+    .clear();
+  }
+  &{
+    width:100%;
+    .clear();
+    margin:auto;
+  }
+  & .row{
+    width:100%;
+    .clear();
+  }
+
+}
+
+/*导航栏*/
+@media only screen and (max-width:1044px){
+  nav{
+    min-width: 320px;
+  }
+}
+
+/*4幅图片*/
+.for(l); //大屏的时候
+.for(@type,@i:1) when (@i<=@cols) {
+  .container > .row .col-@{type}-@{i} {
+    width: @i/@cols*100%;
+    float: left;
+  }
+  .for(@type,@i:@i+1);
+}
+
+/*小于1068px 中屏*/
+@media only screen and (max-width: 1068px){
+  .for(m);
+  .prom-position{
+    .promo-accessories{
+      background-size: 640px 200px;
+      background-repeat: no-repeat;
+      background-image: url(../img/accessories_m.jpg);
+    }
+    .promo-ipad{
+      background-size: 640px 200px;
+      background-repeat: no-repeat;
+      background-image: url(../img/ipad_pro_m.jpg);
+    }
+    .promo-airpods{
+      background-size: 640px 200px;
+      background-repeat: no-repeat;
+      background-image: url(../img/airpods_m.jpg);
+    }
+    .promo-iphone{
+      background-size: 640px 200px;
+      background-repeat: no-repeat;
+      background-image: url(../img/iphone_upgrade_m.jpg);
+    }
+  }
+}
+/*小于735px 小屏*/
+@media only screen and (max-width: 735px){
+  .for(s);
+  .prom-position{
+    .promo-accessories{
+      background-size: 736px 200px;
+      background-repeat: no-repeat;
+      background-image: url(../img/accessories_small.jpg);
+    }
+    .promo-ipad{
+      background-size: 640px 200px;
+      background-repeat: no-repeat;
+      background-image: url(../img/ipad_pro_small.jpg);
+    }
+    .promo-airpods{
+      background-size: 640px 200px;
+      background-repeat: no-repeat;
+      background-image: url(../img/airpods_small.jpg);
+    }
+    .promo-iphone{
+      background-size: 640px 200px;
+      background-repeat: no-repeat;
+      background-image: url(../img/iphone_upgrade_small.jpg);
+    }
+  }
+}
+
+
+.clear(){
+  &::before,&::after{
+    content: "";
+    display:none;
+    clear: both;
+  }
+}
