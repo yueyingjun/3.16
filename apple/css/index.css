@@ -1,0 +1,198 @@
+*{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+#nav{
+	
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    min-width: 1024px;
+    height: 48px;
+    max-height: 44px;
+    background: #333;
+    background: rgba(0,0,0,0.8);
+    font-size: 17px;
+}
+#top{
+	width: 1000px;
+	height:100%;
+	margin:0 auto;
+}
+#top li{
+	width: 48px;
+	height: 100%;
+	margin: 0 26px;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+}
+#top li a{
+	color: #fff;
+	font: 17px;
+}
+.xiala{
+	width: 100%;
+	height: 100%;
+	/*overflow: hidden;*/
+}
+.blt{
+	height: 100%;
+	width:44px ;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.blt1{
+	height: 100%;
+	width:44px ;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.xiala_nav{
+	margin-top: 44px;
+	height: auto;
+	width: 100%;
+	line-height: 43px;
+	display: none;
+	background: rgba(0,0,0,0.8);
+}
+.xiala_nav li{
+	border-bottom: 1px dotted #fff;
+	margin-left: 10px;
+}
+.xiala_nav a{
+	color: #fff;
+	font-size: 18px;
+}
+.banner{
+	width: 100%;
+	height: 594px;
+	position: relative;
+}
+.banner li{
+	width: 100%;
+	height: 594px;
+	/*margin: 0 auto*/	
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+
+}
+.banner2{
+	width: 100%;
+	/*height: auto;*/
+}
+.banner li img{
+	width: 100%;
+	height: 100%;
+}
+.banner2 li{
+	padding: 1px;
+	
+}
+.banner2 li img{
+	width: 100%;
+	height: 100%;
+}
+.footer{
+	width: 100%;
+	height: auto;
+	background: gainsboro;
+}
+.footer h3{
+	font-size: 14px;
+	background: gainsboro;
+}
+.footer a{
+	color: #404040;
+	font: 8px;
+}
+.footer a:hover{
+	text-decoration: underline;
+}
+.new{
+	height: auto;
+	width: 100%;
+}
+.new ul{
+	height: auto;
+	width: 100%;
+	line-height: 39px;
+	background: gainsboro;
+	/*overflow: hidden;*/
+}
+.new .one{
+	width: 100%;
+	height: 38px;
+	border-bottom: 1px dotted #fff;
+	position: relative;
+}
+.one h3{
+	position: absolute;
+	left: 10px;
+	font-size: 16px;
+}
+.one span{
+
+	cursor: pointer;
+
+}
+.one .t{
+	position: absolute;
+	right: 10px;
+}
+.one .t2{
+	position: absolute;
+	right: 10px;
+	display: none;
+}
+.one span{
+	float: right;
+	cursor: pointer;
+
+}
+.new_lie{
+	background:gainsboro ;
+	display: none;
+}
+.new_lie li{
+	border-bottom: 1px dotted #fff;
+	margin-left: 10px;
+}
+.footer_a{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	border-bottom: 1px dotted gainsboro;
+}
+.container1:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.row:after{
+	content: "";
+	clear: both;
+	display: block;
+}
