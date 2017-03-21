@@ -1,0 +1,92 @@
+//阀值
+@smWidth:798px;
+@mdWidth:1000px;
+@lgWidth:1170px;
+//内间距
+@padding:0px;
+//栅格数
+@col:12;
+
+.pad(){
+  padding-left:@padding;
+  padding-right:@padding;
+}
+.container{
+   &{
+     display:block;
+     height:auto;
+     margin-left:auto!important;
+     margin-right:auto!important;
+     .pad();
+   }
+  &-fuild{
+    display:block;
+    width:100%;
+  }
+  & .row,&-fuild .row{
+    display:block;
+    height:auto;
+    .pad();
+    margin-left:-@padding;
+    margin-right:-@padding;
+  }
+  & .row:after,&-fuild .row:after{
+    display:block;
+    clear:both;
+    content:"";
+  }
+}
+[class*=col-]{
+  float:left;
+}
+.col(@type,@i:1) when (@i <= @col){
+  .col-@{type}-@{i}{
+    width:100/@col*@i*1%;
+  }
+  .col(@type,@i+1);
+}
+.col(xs);
+
+
+
+
+/*平板*/
+@media screen and (min-width:@smWidth){
+  .container{
+    width:@smWidth - 2*@padding;
+  }
+  .col(sm);
+}
+@media screen and (min-width:@mdWidth){
+  .container{
+    width:@mdWidth - 2*@padding;
+  }
+  .col(md);
+}
+@media screen and (min-width:@lgWidth){
+  .container{
+    width:@lgWidth - 2*@padding;
+  }
+  .col(lg);
+}
+
+@media screen and (max-width:@smWidth){
+  .none-xs{
+    display:none;
+  }
+}
+@media screen and (min-width:@smWidth) and (max-width:@mdWidth){
+  .none-sm{
+    display:none;
+  }
+}
+@media screen and (min-width:@mdWidth) and (max-width:@lgWidth){
+  .none-md{
+    display:none;
+  }
+}
+@media screen and (min-width:@lgWidth){
+  .none-lg{
+    display:none;
+  }
+}
