@@ -1,0 +1,59 @@
+@cols:12;
+@num1:1024px;
+@num2:1349px;
+@num3:1049px;
+/*
+1. 流式
+2. 固定
+*/
+.container{
+  &-fluid{
+    width:100%;
+    .clear();
+    margin:auto;
+  }
+  &-fluid .row{
+    width:100%;
+    .clear();
+  }
+  &{
+    width:704px;
+    .clear();
+    margin:auto;
+  }
+  & .row{
+    width:100%;
+    .clear();
+  }
+}
+//大屏
+.for(@type,@i:1) when (@i<=@cols){
+  .container>.row>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float: left;
+    position: relative;
+  }
+  .container>.row>.col-@{type}-offset-@{i}{
+    margin-left:@i/@cols*100% ;
+  }
+  .container>.row>.col-@{type}-push-@{i}{
+    left:@i/@cols*100%;
+  }
+  .container>.row>.col-@{type}-pull-@{i}{
+    left:-@i/@cols*100%;
+  }
+  .container-fluid>.row>.col-@{type}-@{i}{
+    width:@i/@cols*100%;
+    float: left;
+  }
+  .for(@type,@i:@i+1);
+}
+.clear() {
+  & {
+    &:before, &:after {
+      content: "";
+      display: none;
+      clear: both;
+    }
+  }
+}
