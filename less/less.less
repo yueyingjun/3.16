@@ -1,0 +1,57 @@
+@color:yellow;
+a{
+  color: @color;
+}
+.one{
+  border:1px solid @color;
+  width:200px;height:200px;
+  border-image-source: url("../img/23.jpg");
+  border-image-width:200px;
+  border-image-repeat: round;
+  border-image-slice: 33%;
+  .radius(10px,20px,20px,30px);
+  .shadow(inset,20px,20px,30px,#000);
+}
+.radius(@num1,@num2,@num3,@num4){
+  border-radius:@arguments;
+  -webkit-border-radius:@arguments;
+  -moz-border-radius:@arguments;
+  -o-border-radius:@arguments;
+  -ms-border-radius:@arguments;
+
+}
+.shadow(@type,@x,@y,@b,@c) when(@type=inset){
+   box-shadow: @x @y @b @c @type;
+   -webkit-box-shadow: @x @y @b @c @type;
+  -moz-box-shadow: @x @y @b @c @type;
+  -o-box-shadow: @x @y @b @c @type;
+  -ms-box-shadow: @x @y @b @c @type;
+}
+.shadow(@type,@x,@y,@b,@c) when(@type=outset){
+  box-shadow: @x @y @b @c;
+  -webkit-box-shadow:@x @y @b @c;
+  -moz-box-shadow: @x @y @b @c;
+  -o-box-shadow:  @x @y @b @c;
+  -ms-box-shadow:@x @y @b @c;
+}
+.for(@i:1)when(@i<=12){
+  .col-s-@{i}{
+       width:@i/12*100%;
+  }
+  .for(@i:@i+1);
+}
+.for();
+.form(@i:1)when(@i<=12){
+  .col-m-@{i}{
+    width:@i/12*100%;
+  }
+  .form(@i:@i+1);
+}
+.form();
+.forl(@i:1)when(@i<=12){
+  .col-l-@{i}{
+    width:@i/12*100%;
+  }
+  .forl(@i:@i+1);
+}
+.forl();
