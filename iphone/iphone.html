@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/iphone.css">
+<script src="jquery.min.js"></script>
+<script src="iphone.js"></script>
+<style>
+    .top{
+        height: 40px;
+        background: #444444;
+    }
+    .bottom{
+        height: 44px;
+        background: #333333;
+    }
+    .font{
+        line-height: 44px;
+        text-align: center;
+        position: relative;
+    }
+    .font li{
+        margin: 0 1.333%;
+    }
+    .font a{
+        font-size: 12px;
+        color: #ffffff;
+    }
+    .banner{
+        height: 594px;
+        background: #000;
+    }
+    .imgs>div{
+        height: 200px;
+    }
+    .one{
+        background: url("img/1.jpg") no-repeat center center;
+        background: cover;
+
+    }
+    .two{
+        background: url("img/2.jpg") no-repeat center center;
+        background: cover;
+    }
+    .three{
+        background: url("img/3.jpg") no-repeat center center;
+        background: cover;
+    }
+    .four{
+        background: url("img/4.jpg") no-repeat center center;
+        background: cover;
+    }
+    .first{
+        border-bottom: 1px solid #d6d6d6;
+        color: #888;
+        padding: 17px 0 11px;
+        font-size: 11px;
+        line-height: 1.45455;
+        font-weight: 400;
+        letter-spacing: .005em;
+    }
+    .bgcolor{
+        background: #F2F2F2;
+    }
+    .padding{
+        padding: 0 22px;
+    }
+    .select{
+        margin: 0 1.667%;
+
+    }
+    p.select{
+        margin-bottom: 20px;
+    }
+    .select h3{
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .005em;
+        margin-bottom: 5px;
+        position: relative;
+    }
+    .select a{
+        font-size: 11px;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    .zu{
+        padding-bottom: 24px;
+    }
+    .right{
+        position: absolute;
+        top: 8px;
+        right: 3px;
+    }
+    .bg{
+        position: absolute;
+        left: 0;
+        top: 84px;
+        width: 100%;
+        height: 100%;
+        background: black;
+        text-align: center;
+        display: none;
+    }
+
+    .bg a{
+        color: #fff;
+        font-size: 18px;
+        padding: 20px 0px;
+        display: inline-block;
+        width: 80%;
+        border-bottom: 1px solid #ffffff;
+
+    }
+    #iphone{
+        color: white;
+    }
+    .cc{
+        display: block;
+        overflow-x:hidden;overflow-y:hidden;
+    }
+
+</style>
+<body>
+
+<script>
+    $(function () {
+        var flag=true;
+        $("#iphone").click(function () {
+            if(flag){
+                flag=false;
+                $(".bg").addClass("cc");
+                $("body").addClass("cc");
+            }else{
+                flag=true;
+                $(".bg").removeClass("cc");
+                $("body").removeClass("cc");
+            }
+
+        })
+    })
+</script>
+    <div class="con-fluid">
+        <div class="rows">
+            <div class="bg col-l-hide">
+                <li class=""><a >iphone</a></li>
+                <li class=""><a href="">Mac</a></li>
+                <li class=""><a href="">iPad</a></li>
+                <li class=""><a href="">iPhone</a></li>
+                <li class=""><a href="">Watch</a></li>
+                <li class=""><a href="">Music</a></li>
+                <li class=""><a href="">技术支持</a></li>
+                <li class=""><a href="">搜索</a></li>
+                <li class=""><a href="">箱子</a></li>
+                <li  ><a href="">杠杠</a></li>
+            </div>
+                    <div class="con-fluid top col-l-12 col-m-12 col-s-12">
+                        <div class="rows">
+                            <div class="col-l-8 col-m-12 col-s-12 col-l-margin-2">广告</div>
+                        </div>
+                    </div>
+                    <div class="con-fluid bottom col-l-12 col-m-12 col-s-12 ">
+                        <div class="rows">
+                            <div class="con-fluid center col-l-8 col-m-12 col-s-12 col-l-margin-2">
+                                    <ul class="rows font">
+                                        <li class="col-m-hide col-s-4 col-s-dw" id="iphone">点击</li>
+                                        <li class="col-m-1 col-s-hide" ><a >iphone</a></li>
+                                        <li class="col-m-1 col-s-hide"><a href="">Mac</a></li>
+                                        <li class="col-m-1 col-s-hide"><a href="">iPad</a></li>
+                                        <li class="col-m-1 col-s-hide"><a href="">iPhone</a></li>
+                                        <li class="col-m-1 col-s-hide"><a href="">Watch</a></li>
+                                        <li class="col-m-1 col-s-hide"><a href="">Music</a></li>
+                                        <li class="col-m-1 col-s-hide"><a href="">技术支持</a></li>
+                                        <li class="col-m-1 col-s-hide"><a href="">搜索</a></li>
+                                        <li class="col-m-1 col-s-4"><a href="">箱子</a></li>
+                                        <li class="col-m-hide col-s-rw" ><a href="">杠杠</a></li>
+
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner col-l-12 col-m-l2 col-s-12">
+                    </div>
+                    <div class="con-fluid">
+                        <div class="rows imgs">
+                        <div class="one col-l-3 col-m-6 col-s-12">
+                        </div>
+                        <div class="two col-l-3 col-m-6 col-s-12">
+                        </div>
+                        <div class="three col-l-3 col-m-6 col-s-12">
+                        </div>
+                        <div class="four col-l-3 col-m-6 col-s-12">
+                        </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="bgcolor con-fluid  col-l-12 col-m-12 col-s-12">
+                <div class="rows">
+                    <div class="padding con-fluid col-l-8 col-m-12 col-s-12 col-l-margin-2">
+                        <div class="rows">
+                            <p class="select first col-l-12 col-m-12 col-s-12">
+
+                                双镜头摄像头仅于 iPhone 7 Plus 提供。亮黑色外观仅于 128GB 及以上存储容量的机型提供。
+                            </p>
+
+
+
+
+                            <div class="con-fluid select col-m-2 col-s-12">
+                                <div class="rows">
+                                    <h3 class="con-fluid col-s-padding">选购了解
+                                        <div class="rows">
+                                            <span class="right col-m-hide">+</span>
+                                        </div>
+                                    </h3>
+                                    <ul class="zu col-s-hide">
+                                        <li><a href="">Mac</a></li>
+                                        <li><a href="">iPad</a></li>
+                                        <li><a href="">iPhone</a></li>
+                                        <li><a href="">Watch</a></li>
+                                        <li><a href="">Music</a></li>
+                                        <li><a href="">iTunes</a></li>
+                                        <li><a href="">iPod</a></li>
+                                        <li><a href="">配件</a></li>
+                                        <li><a href="">App Store 充值卡</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="con-fluid select col-m-2 col-s-12">
+                                <div class="rows">
+                                    <h3 class="con-fluid col-s-padding">Apple Store 商店
+                                        <div class="rows">
+                                            <span class="right col-m-hide">+</span>
+                                        </div>
+
+                                    </h3>
+                                    <ul class="zu  col-s-hide ">
+                                        <li><a href="">查找零售店</a></li>
+                                        <li><a href="">天才吧</a></li>
+                                        <li><a href="">iPod</a></li>
+                                        <li><a href="">配件</a></li>
+                                        <li><a href="">App Store 充值卡</a></li>
+                                        <li><a href="">iPod</a></li>
+                                        <li><a href="">配件</a></li>
+                                        <li><a href="">App Store 充值卡</a></li>
+                                        <li><a href="">配件</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="select col-m-2 col-s-12">
+                                <div class="con-fluid">
+                                    <div class="rows">
+                                        <h3 class="con-fluid col-s-padding">选购了解
+                                            <div class="rows">
+                                                <span class="right col-m-hide">+</span>
+                                            </div>
+                                        </h3>
+                                        <ul class="zu col-s-hide">
+                                            <li><a href="">App Store 充值卡</a></li>
+                                            <li><a href="">配件</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="con-fluid">
+                                    <div class="rows">
+                                        <h3 class="con-fluid col-s-padding">选购了解
+                                            <div class="rows">
+                                                <span class="right col-m-hide">+</span>
+                                            </div>
+                                        </h3>
+                                        <ul class="zu col-s-hide">
+                                            <li><a href="">App Store 充值卡</a></li>
+                                            <li><a href="">配件</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="select col-m-2 col-s-12">
+                                <div class="con-fluid">
+                                    <div class="rows">
+                                        <h3 class="con-fluid col-s-padding">选购了解
+                                            <div class="rows">
+                                                <span class="right col-m-hide">+</span>
+                                            </div>
+                                        </h3>
+                                        <ul class="zu col-s-hide">
+                                            <li><a href="">配件</a></li>
+                                            <li><a href="">App Store 充值卡</a></li>
+                                            <li><a href="">配件</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="con-fluid">
+                                    <div class="rows">
+                                        <h3 class="con-fluid col-s-padding">选购了解
+                                            <div class="rows">
+                                                <span class="right col-m-hide">+</span>
+                                            </div>
+                                        </h3>
+                                        <ul class="zu col-s-hide">
+                                            <li><a href="">配件</a></li>
+                                            <li><a href="">App Store 充值卡</a></li>
+                                            <li><a href="">配件</a></li>
+                                            <li><a href="">配件</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="con-fluid select col-m-2 col-s-12">
+                                <div class="rows">
+                                    <h3 class="con-fluid col-s-padding">选购了解
+                                        <div class="rows">
+                                            <span class="right col-m-hide">+</span>
+                                        </div>
+                                    </h3>
+                                    <ul class="zu col-s-hide">
+                                        <li><a href="">配件</a></li>
+                                        <li><a href="">App Store 充值卡</a></li>
+                                        <li><a href="">配件</a></li>
+                                        <li><a href="">配件</a></li>
+                                        <li><a href="">App Store 充值卡</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
