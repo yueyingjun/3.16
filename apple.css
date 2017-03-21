@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+.topnav{
+    width: 100%;
+    height: 44px;
+    background: #020202;
+}
+.nav{
+    width: 1000px;
+    height: 100%;
+    margin:0 auto;
+}
+.nav li{
+    float: left;
+    height:100%;
+    margin-right: 70px;
+    text-align: center;
+}
+.nav li .logo,.sou,.gou{
+    font-size: 25px;
+    color: #c0c0c0;
+}
+.nav li a{
+    display: inline-block;
+    line-height: 44px;
+    text-align: center;
+}
+.nav li span{
+    font-size: 1em;
+    font-weight: inherit;
+    color: #c0c0c0;
+}
+.mid{
+    width:100%;
+    height: 550px;
+    position: relative;
+}
+.lunbo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.lunbo li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.lunbo li img{
+    width: 100%;
+    height: 100%;
+}
+.leftbtn,.rightbtn{
+    position: absolute;
+    border-radius: 64px;
+    width: 64px;
+    height: 64px;
+    top:50%;
+    background: rgba(180,180,180,0.25);
+    text-align: center;
+    line-height: 64px;
+    color: #fff;
+    font-size: 30px;
+}
+.mid .leftbtn{
+    left: 18px;
+}
+.mid .rightbtn{
+    right: 18px;
+}
+.ad{
+    width: 100%;
+    height: 200px;
+}
+.ad li{
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+.ad li img{
+    width: 100%;
+    height: 100%;
+}
+.foot{
+    width: 100%;
+    height: 360px;
+    background: #f2f2f2;
+}
+.footin{
+    width:1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.content{
+    width: 980px;
+    height: 252px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.content li{
+    font-size: 8px;
+}
+.content>div{
+    float: left;
+    width:196px;
+}
+.footbottom{
+    width: 980px;
+    height: 108px;
+    margin: 0 auto;
+}
